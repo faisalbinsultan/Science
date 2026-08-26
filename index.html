@@ -1,291 +1,576 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مساعد العلوم</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مساعد العلوم</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f8ff;
-      text-align: center;
-      padding: 25px;
-      color: #222;
-    }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8ff;
+  text-align: center;
+  padding: 20px;
+  color: #222;
+}
 
-    .box {
-      max-width: 650px;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 20px;
-      box-shadow: 0 4px 15px #ccc;
-    }
+.box {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px #ccc;
+}
 
-    h1 {
-      font-size: 36px;
-    }
+h1 {
+  font-size: 36px;
+}
 
-    h2 {
-      color: #2463eb;
-    }
+h2 {
+  color: #2463eb;
+}
 
-    .intro {
-      font-size: 18px;
-      line-height: 1.8;
-    }
+p {
+  font-size: 19px;
+  line-height: 1.9;
+}
 
-    button {
-      border: none;
-      border-radius: 12px;
-      padding: 14px 22px;
-      margin: 8px;
-      font-size: 18px;
-      cursor: pointer;
-    }
+button {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 22px;
+  margin: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-    #start {
-      background: #2463eb;
-      color: white;
-    }
+.mainBtn,
+.nextBtn {
+  background: #2463eb;
+  color: white;
+}
 
-    .answer {
-      background: #e8eefc;
-      display: block;
-      width: 90%;
-      margin: 10px auto;
-    }
+.answer {
+  background: #e8eefc;
+  display: block;
+  width: 90%;
+  margin: 12px auto;
+}
 
-    .next {
-      background: #2463eb;
-      color: white;
-    }
+.card {
+  background: #f1f5ff;
+  padding: 18px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
 
-    #lesson {
-      display: none;
-    }
+.correct {
+  background: #b9f6c3;
+}
 
-    #result {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 20px;
-    }
+.wrong {
+  background: #ffc1c1;
+}
 
-    #score {
-      font-size: 30px;
-      color: #2463eb;
-      font-weight: bold;
-    }
-  </style>
+.page {
+  display: none;
+}
+
+#home {
+  display: block;
+}
+
+.score {
+  font-size: 34px;
+  color: #2463eb;
+  font-weight: bold;
+}
+
+ul {
+  text-align: right;
+  line-height: 2.2;
+  font-size: 18px;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="box">
-
-    <h1>🔬 مساعد العلوم</h1>
-
-    <h2>الصف الخامس الابتدائي</h2>
-
-    <p class="intro">
-      أنا صديقكم فيصل الزامل، وأحب مادة العلوم،
-      لذلك قمت بعمل هذا الموقع. 🔬❤️
-    </p>
-
-    <h2>الدرس الحالي</h2>
+<div class="box">
 
-    <p>🌱 تصنيف المخلوقات الحية</p>
+<!-- الصفحة الرئيسية -->
+<div id="home" class="page">
 
-    <button id="start" onclick="startLesson()">
-      🚀 ابدأ الدرس
-    </button>
+<h1>🔬 مساعد العلوم</h1>
 
-    <div id="lesson">
+<h2>الصف الخامس الابتدائي</h2>
 
-      <hr>
+<p>
+أنا صديقكم فيصل الزامل، وأحب مادة العلوم،
+لذلك قمت بعمل هذا الموقع. 🔬❤️
+</p>
 
-      <h2 id="questionNumber"></h2>
+<h2>🌱 الدرس الحالي</h2>
 
-      <h3 id="question"></h3>
+<p>تصنيف المخلوقات الحية</p>
 
-      <div id="answers"></div>
+<button class="mainBtn" onclick="showPage('prepare')">
+🚀 ابدأ الدرس
+</button>
 
-      <div id="result"></div>
+</div>
 
-      <button class="next" id="nextButton" onclick="nextQuestion()" style="display:none;">
-        ➡️ السؤال التالي
-      </button>
 
-    </div>
+<!-- التحضير -->
+<div id="prepare" class="page">
 
-  </div>
+<h1>🎯 استعد للدرس</h1>
 
-  <script>
+<p>
+اليوم سنتعلم كيف يصنف العلماء المخلوقات الحية في مجموعات.
+</p>
 
-    const questions = [
-      {
-        question: "أي مما يلي يُعد مخلوقًا حيًا؟",
-        answers: ["🪨 الصخرة", "🌳 الشجرة", "🪑 الكرسي"],
-        correct: 1
-      },
-      {
-        question: "لماذا يصنف العلماء المخلوقات الحية؟",
-        answers: [
-          "🔍 لتسهيل دراستها",
-          "🎨 لتغيير ألوانها",
-          "📏 لزيادة حجمها"
-        ],
-        correct: 0
-      },
-      {
-        question: "أي مما يلي من المخلوقات الحية؟",
-        answers: [
-          "🐶 الكلب",
-          "🚗 السيارة",
-          "🏠 المنزل"
-        ],
-        correct: 0
-      },
-      {
-        question: "أي مخلوق من التالي يصنع غذاءه بنفسه؟",
-        answers: [
-          "🌱 النبات",
-          "🐱 القط",
-          "🐟 السمكة"
-        ],
-        correct: 0
-      },
-      {
-        question: "يعتمد التصنيف على الصفات المشتركة بين المخلوقات الحية.",
-        answers: [
-          "✅ صح",
-          "❌ خطأ"
-        ],
-        correct: 0
-      }
-    ];
+<div class="card">
+<h2>ماذا سنتعلم؟</h2>
 
-    let currentQuestion = 0;
-    let score = 0;
-    let answered = false;
+<ul>
+<li>🔬 لماذا نصنف المخلوقات الحية؟</li>
+<li>🌱 كيف تختلف المخلوقات الحية؟</li>
+<li>🐾 ما أهم مجموعاتها؟</li>
+<li>🦠 ما بعض المخلوقات الدقيقة؟</li>
+</ul>
+</div>
 
-    function startLesson() {
-      document.getElementById("start").style.display = "none";
-      document.getElementById("lesson").style.display = "block";
+<p>
+⭐ هدفنا: أن تستطيع شرح فكرة تصنيف المخلوقات الحية بطريقة بسيطة.
+</p>
 
-      showQuestion();
-    }
+<button class="nextBtn" onclick="showPage('lesson')">
+📚 ابدأ الشرح
+</button>
 
-    function showQuestion() {
+</div>
 
-      answered = false;
 
-      document.getElementById("result").innerHTML = "";
+<!-- الشرح -->
+<div id="lesson" class="page">
 
-      document.getElementById("nextButton").style.display = "none";
+<h1>📚 شرح الدرس</h1>
 
-      document.getElementById("questionNumber").innerHTML =
-        "السؤال " + (currentQuestion + 1) + " من " + questions.length;
+<div class="card">
+<h2>1️⃣ ما التصنيف؟</h2>
+<p>
+التصنيف هو ترتيب المخلوقات الحية في مجموعات
+بحسب الصفات المشتركة بينها.
+</p>
+</div>
 
-      document.getElementById("question").innerHTML =
-        questions[currentQuestion].question;
+<div class="card">
+<h2>2️⃣ لماذا نصنف المخلوقات؟</h2>
+<p>
+يساعد التصنيف العلماء على دراسة المخلوقات الحية
+ومعرفة أوجه التشابه والاختلاف بينها.
+</p>
+</div>
 
-      const answersDiv = document.getElementById("answers");
+<div class="card">
+<h2>3️⃣ الحيوانات</h2>
+<p>
+من الحيوانات ما له عمود فقري، وتسمى فقاريات،
+ومنها ما ليس له عمود فقري، وتسمى لافقاريات.
+</p>
+</div>
 
-      answersDiv.innerHTML = "";
+<div class="card">
+<h2>4️⃣ النباتات</h2>
+<p>
+النباتات مخلوقات حية تصنع غذاءها بنفسها
+باستخدام ضوء الشمس.
+</p>
+</div>
 
-      questions[currentQuestion].answers.forEach((answer, index) => {
+<div class="card">
+<h2>5️⃣ مخلوقات أخرى</h2>
+<p>
+توجد مخلوقات حية صغيرة جدًا، ومنها البكتيريا
+وبعض المخلوقات وحيدة الخلية.
+</p>
+</div>
 
-        const button = document.createElement("button");
+<button class="nextBtn" onclick="showPage('summary')">
+📌 شاهد الملخص
+</button>
 
-        button.className = "answer";
+</div>
 
-        button.innerHTML = answer;
 
-        button.onclick = function() {
-          checkAnswer(index);
-        };
+<!-- الملخص -->
+<div id="summary" class="page">
 
-        answersDiv.appendChild(button);
+<h1>📌 ملخص الدرس</h1>
 
-      });
-    }
+<div class="card">
+<p>
+🌱 المخلوقات الحية تختلف في صفاتها.
+</p>
 
-    function checkAnswer(selected) {
+<p>
+🔬 يستخدم العلماء التصنيف لترتيب المخلوقات في مجموعات.
+</p>
 
-      if (answered) {
-        return;
-      }
+<p>
+🐾 الحيوانات منها فقاريات ولافقاريات.
+</p>
 
-      answered = true;
+<p>
+🌿 النباتات تصنع غذاءها بنفسها.
+</p>
 
-      const correct = questions[currentQuestion].correct;
+<p>
+🦠 توجد مخلوقات حية دقيقة جدًا.
+</p>
+</div>
 
-      const result = document.getElementById("result");
+<button class="nextBtn" onclick="showPage('review')">
+🧠 ابدأ المراجعة
+</button>
 
-      if (selected === correct) {
+</div>
 
-        score++;
 
-        result.innerHTML = "🎉 أحسنت! إجابة صحيحة.";
+<!-- المراجعة -->
+<div id="review" class="page">
 
-      } else {
+<h1>🧠 مراجعة سريعة</h1>
 
-        result.innerHTML =
-          "❌ إجابة غير صحيحة. حاول تتذكر المعلومة مرة أخرى.";
+<div class="card">
+<h2>تذكر!</h2>
 
-      }
+<p>
+التصنيف = تجميع المخلوقات الحية
+بحسب الصفات المشتركة.
+</p>
 
-      document.getElementById("nextButton").style.display = "inline-block";
-    }
+<p>
+🐶 الحيوان الذي له عمود فقري يسمى فقاريًا.
+</p>
 
-    function nextQuestion() {
+<p>
+🌳 النبات يستطيع صنع غذائه بنفسه.
+</p>
 
-      currentQuestion++;
+<p>
+🦠 بعض المخلوقات الحية صغيرة جدًا ولا يمكن رؤيتها
+بالعين المجردة.
+</p>
+</div>
 
-      if (currentQuestion < questions.length) {
+<button class="nextBtn" onclick="startQuiz()">
+📝 ابدأ الاختبار
+</button>
 
-        showQuestion();
+</div>
 
-      } else {
 
-        showFinalResult();
+<!-- الاختبار -->
+<div id="quiz" class="page">
 
-      }
-    }
+<h1>📝 اختبار العلوم</h1>
 
-    function showFinalResult() {
+<h2 id="questionNumber"></h2>
 
-      document.getElementById("questionNumber").innerHTML =
-        "🏆 انتهى الاختبار!";
+<h3 id="question"></h3>
 
-      document.getElementById("question").innerHTML =
-        "أحسنت على إكمال الاختبار 🎉";
+<div id="answers"></div>
 
-      document.getElementById("answers").innerHTML = "";
+<p id="feedback"></p>
 
-      document.getElementById("result").innerHTML =
-        "<div id='score'>" + score + " / " + questions.length + "</div>" +
-        "<br>⭐ هذه هي نتيجتك";
+<button id="nextQuestion" class="nextBtn"
+onclick="nextQuestion()" style="display:none;">
+➡️ السؤال التالي
+</button>
 
-      document.getElementById("nextButton").innerHTML =
-        "🔄 إعادة الاختبار";
+</div>
 
-      document.getElementById("nextButton").style.display = "inline-block";
 
-      document.getElementById("nextButton").onclick = function() {
+<!-- النتيجة -->
+<div id="resultPage" class="page">
 
-        currentQuestion = 0;
-        score = 0;
+<h1>🏆 انتهى الاختبار!</h1>
 
-        showQuestion();
+<p>أحسنت على إكمال الاختبار 🎉</p>
 
-      };
+<div id="finalScore" class="score"></div>
 
-    }
+<p id="message"></p>
 
-  </script>
+<button class="nextBtn" onclick="startQuiz()">
+🔄 إعادة الاختبار
+</button>
+
+<button class="mainBtn" onclick="showPage('home')">
+🏠 الصفحة الرئيسية
+</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+const questions = [
+
+{
+question: "أي مما يلي يُعد مخلوقًا حيًا؟",
+answers: ["🪨 الصخرة", "🌳 الشجرة", "🪑 الكرسي"],
+correct: 1
+},
+
+{
+question: "لماذا يصنف العلماء المخلوقات الحية؟",
+answers: [
+"🔬 لتسهيل دراستها",
+"🎨 لتغيير ألوانها",
+"📏 لزيادة حجمها"
+],
+correct: 0
+},
+
+{
+question: "أي مما يلي من الفقاريات؟",
+answers: [
+"🐟 السمكة",
+"🪱 الدودة",
+"🦋 الفراشة"
+],
+correct: 0
+},
+
+{
+question: "أي مخلوق يصنع غذاءه بنفسه؟",
+answers: [
+"🌳 النبات",
+"🐱 القط",
+"🐟 السمكة"
+],
+correct: 0
+},
+
+{
+question: "أي مما يلي مخلوق حي؟",
+answers: [
+"🚗 السيارة",
+"🐶 الكلب",
+"🪑 الكرسي"
+],
+correct: 1
+},
+
+{
+question: "ما المقصود بالتصنيف؟",
+answers: [
+"📚 ترتيب المخلوقات في مجموعات",
+"🎨 تلوين المخلوقات",
+"📏 قياس المخلوقات"
+],
+correct: 0
+},
+
+{
+question: "الحيوانات التي لها عمود فقري تسمى:",
+answers: [
+"🐾 فقاريات",
+"🌱 نباتات",
+"🦠 بكتيريا"
+],
+correct: 0
+},
+
+{
+question: "أي مما يلي نبات؟",
+answers: [
+"🌳 شجرة",
+"🐱 قط",
+"🐟 سمكة"
+],
+correct: 0
+},
+
+{
+question: "هل توجد مخلوقات حية صغيرة جدًا؟",
+answers: [
+"✅ نعم",
+"❌ لا"
+],
+correct: 0
+},
+
+{
+question: "التصنيف يساعد العلماء على دراسة المخلوقات الحية.",
+answers: [
+"✅ صح",
+"❌ خطأ"
+],
+correct: 0
+}
+
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+
+function showPage(pageId) {
+
+document.querySelectorAll(".page").forEach(page => {
+page.style.display = "none";
+});
+
+document.getElementById(pageId).style.display = "block";
+
+window.scrollTo(0,0);
+}
+
+
+function startQuiz() {
+
+currentQuestion = 0;
+score = 0;
+
+showPage("quiz");
+
+showQuestion();
+
+}
+
+
+function showQuestion() {
+
+answered = false;
+
+document.getElementById("feedback").innerHTML = "";
+
+document.getElementById("nextQuestion").style.display = "none";
+
+document.getElementById("questionNumber").innerHTML =
+"السؤال " + (currentQuestion + 1) +
+" من " + questions.length;
+
+document.getElementById("question").innerHTML =
+questions[currentQuestion].question;
+
+const answersDiv = document.getElementById("answers");
+
+answersDiv.innerHTML = "";
+
+questions[currentQuestion].answers.forEach((answer,index) => {
+
+const button = document.createElement("button");
+
+button.className = "answer";
+
+button.innerHTML = answer;
+
+button.onclick = function() {
+
+checkAnswer(index,button);
+
+};
+
+answersDiv.appendChild(button);
+
+});
+
+}
+
+
+function checkAnswer(selected,button) {
+
+if(answered) return;
+
+answered = true;
+
+const correct = questions[currentQuestion].correct;
+
+if(selected === correct) {
+
+score++;
+
+button.classList.add("correct");
+
+document.getElementById("feedback").innerHTML =
+"🎉 أحسنت! إجابة صحيحة.";
+
+} else {
+
+button.classList.add("wrong");
+
+document.getElementById("feedback").innerHTML =
+"❌ إجابة غير صحيحة.";
+
+document.querySelectorAll(".answer")[correct]
+.classList.add("correct");
+
+}
+
+document.getElementById("nextQuestion").style.display =
+"inline-block";
+
+}
+
+
+function nextQuestion() {
+
+currentQuestion++;
+
+if(currentQuestion < questions.length) {
+
+showQuestion();
+
+} else {
+
+showResult();
+
+}
+
+}
+
+
+function showResult() {
+
+showPage("resultPage");
+
+document.getElementById("finalScore").innerHTML =
+score + " / " + questions.length;
+
+let message = "";
+
+if(score === 10) {
+
+message = "🏆 ممتاز جدًا! حصلت على الدرجة الكاملة!";
+
+} else if(score >= 8) {
+
+message = "🌟 رائع! مستواك ممتاز.";
+
+} else if(score >= 5) {
+
+message = "👏 جيد جدًا، راجع بعض المعلومات وحاول مرة أخرى.";
+
+} else {
+
+message = "💪 لا بأس! راجع الدرس وحاول مرة أخرى.";
+
+}
+
+document.getElementById("message").innerHTML = message;
+
+}
+
+</script>
 
 </body>
 </html>
