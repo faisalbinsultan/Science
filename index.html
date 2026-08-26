@@ -4,17 +4,145 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مساعد العلوم</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8ff;
+      text-align: center;
+      padding: 30px;
+      color: #222;
+    }
+
+    .box {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px #ccc;
+    }
+
+    h1 {
+      font-size: 38px;
+    }
+
+    h2 {
+      color: #2463eb;
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 14px 25px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #start {
+      background: #2463eb;
+      color: white;
+    }
+
+    .answer {
+      background: #e8eefc;
+      display: block;
+      width: 90%;
+      margin: 10px auto;
+    }
+
+    #result {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+    #lesson {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>🔬 مساعد العلوم</h1>
-  <h2>الصف الخامس الابتدائي</h2>
 
-  <p>أهلاً بك! 👋</p>
+  <div class="box">
 
-  <h3>الدرس الحالي</h3>
-  <p>تصنيف المخلوقات الحية</p>
+    <h1>🔬 مساعد العلوم</h1>
 
-<button onclick="alert('🚀 بدأ درس تصنيف المخلوقات الحية!')">🚀 ابدأ الدرس</button>
+    <h2>الصف الخامس الابتدائي</h2>
+
+    <p>👋 أهلاً بك!</p>
+
+    <h2>الدرس الحالي</h2>
+
+    <p>🌱 تصنيف المخلوقات الحية</p>
+
+    <button id="start" onclick="startLesson()">
+      🚀 ابدأ الدرس
+    </button>
+
+    <div id="lesson">
+
+      <hr>
+
+      <h2>📚 تصنيف المخلوقات الحية</h2>
+
+      <p>
+        المخلوقات الحية تختلف في صفاتها، ويمكن تصنيفها
+        إلى مجموعات حسب الصفات المشتركة بينها.
+      </p>
+
+      <h3>🐾 سؤال 1</h3>
+
+      <p>أي مما يلي يُعد مخلوقًا حيًا؟</p>
+
+      <button class="answer" onclick="checkAnswer(false)">
+        🪨 الصخرة
+      </button>
+
+      <button class="answer" onclick="checkAnswer(true)">
+        🌳 الشجرة
+      </button>
+
+      <button class="answer" onclick="checkAnswer(false)">
+        🪑 الكرسي
+      </button>
+
+      <div id="result"></div>
+
+      <button onclick="nextQuestion()">
+        ➡️ السؤال التالي
+      </button>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function startLesson() {
+      document.getElementById("lesson").style.display = "block";
+      document.getElementById("start").style.display = "none";
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function checkAnswer(correct) {
+      const result = document.getElementById("result");
+
+      if (correct) {
+        result.innerHTML = "🎉 أحسنت! إجابة صحيحة.";
+      } else {
+        result.innerHTML = "❌ حاول مرة أخرى.";
+      }
+    }
+
+    function nextQuestion() {
+      document.getElementById("result").innerHTML =
+        "🌿 رائع! أكمل دراسة الدرس لمعرفة المزيد عن تصنيف المخلوقات الحية.";
+    }
+
+  </script>
+
 </body>
 </html>
