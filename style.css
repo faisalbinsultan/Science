@@ -646,14 +646,15 @@ footer small {
 
 .hero {
     width: 100%;
-    aspect-ratio: 1122 / 951;
+    height: auto;
     min-height: 0;
-    background-size: 100% 100%;
-    background-position: center;
+
+    background-size: 100% auto;
+    background-position: top center;
     background-repeat: no-repeat;
+
     padding: 0;
 }
-
     .hero-icon {
         font-size: 45px;
     }
