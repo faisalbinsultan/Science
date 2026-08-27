@@ -785,7 +785,7 @@ footer small {
 
         min-height: 0;
 
-        background-size: 100% 100%;
+        background-size: 100% auto;
         background-position: center top;
         background-repeat: no-repeat;
 
