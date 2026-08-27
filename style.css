@@ -33,10 +33,19 @@ body {
    ========================================== */
 
 .hero {
-    background: linear-gradient(135deg, #2457d6, #3b82f6);
+    background-image: url("A62DF286-2BCD-4BDD-B2F3-8599B37F3C71.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding: 45px 20px 50px;
+    padding: 70px 20px 80px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .hero-icon {
