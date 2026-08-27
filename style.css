@@ -644,16 +644,15 @@ footer small {
 
 @media (max-width: 600px) {
 
-    .hero {
-        .hero {
-    background-size: 100% auto;
-    background-position: top center;
+.hero {
+    width: 100%;
+    aspect-ratio: 1122 / 951;
+    min-height: 0;
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
-
-    min-height: 420px;
     padding: 0;
 }
-    }
 
     .hero-icon {
         font-size: 45px;
@@ -772,8 +771,4 @@ footer small {
 .hero p,
 .hero .semester {
     display: none;
-}
 
-.hero {
-    padding: 0;
-}
