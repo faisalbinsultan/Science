@@ -33,9 +33,9 @@ body {
    ========================================== */
 
 .hero {
-    background-image: url("A62DF286-2BCD-4BDD-B2F3-8599B37F3C71.jpeg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("132E7383-4068-4238-BEF6-13B51BA64F39.jpeg");
+    background-size: 100% auto;
+    background-position: top center;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
@@ -645,7 +645,14 @@ footer small {
 @media (max-width: 600px) {
 
     .hero {
-        padding: 35px 15px 40px;
+        .hero {
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    min-height: 420px;
+    padding: 0;
+}
     }
 
     .hero-icon {
