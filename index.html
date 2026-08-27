@@ -1,576 +1,536 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مساعد العلوم</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f8ff;
-  text-align: center;
-  padding: 20px;
-  color: #222;
-}
+    <title>مساعد العلوم | الصف الخامس</title>
 
-.box {
-  max-width: 650px;
-  margin: auto;
-  background: white;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px #ccc;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  color: #2463eb;
-}
-
-p {
-  font-size: 19px;
-  line-height: 1.9;
-}
-
-button {
-  border: none;
-  border-radius: 14px;
-  padding: 14px 22px;
-  margin: 8px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.mainBtn,
-.nextBtn {
-  background: #2463eb;
-  color: white;
-}
-
-.answer {
-  background: #e8eefc;
-  display: block;
-  width: 90%;
-  margin: 12px auto;
-}
-
-.card {
-  background: #f1f5ff;
-  padding: 18px;
-  border-radius: 15px;
-  margin: 15px 0;
-}
-
-.correct {
-  background: #b9f6c3;
-}
-
-.wrong {
-  background: #ffc1c1;
-}
-
-.page {
-  display: none;
-}
-
-#home {
-  display: block;
-}
-
-.score {
-  font-size: 34px;
-  color: #2463eb;
-  font-weight: bold;
-}
-
-ul {
-  text-align: right;
-  line-height: 2.2;
-  font-size: 18px;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="box">
+<header class="hero">
 
-<!-- الصفحة الرئيسية -->
-<div id="home" class="page">
+    <div class="hero-icon">🔬</div>
 
-<h1>🔬 مساعد العلوم</h1>
+    <h1>مساعد العلوم</h1>
 
-<h2>الصف الخامس الابتدائي</h2>
+    <p>أنا صديقكم فيصل الزامل 👋</p>
 
-<p>
-أنا صديقكم فيصل الزامل، وأحب مادة العلوم،
-لذلك قمت بعمل هذا الموقع. 🔬❤️
-</p>
+    <p>علوم الصف الخامس الابتدائي</p>
 
-<h2>🌱 الدرس الحالي</h2>
+    <span class="semester">الفصل الدراسي الأول</span>
 
-<p>تصنيف المخلوقات الحية</p>
+</header>
 
-<button class="mainBtn" onclick="showPage('prepare')">
-🚀 ابدأ الدرس
-</button>
+
+<main class="container">
+
+    <section class="welcome">
+
+        <h2>👋 أهلاً بك في مساعد العلوم</h2>
+
+        <p>
+            أنا صديقكم فيصل الزامل،
+            وأحب مادة العلوم، لذلك قمت بعمل هذا الموقع
+            لمساعدتكم على التعلم والمراجعة والاستعداد للاختبارات.
+        </p>
+
+        <p>
+            تعلم، راجع، واختبر نفسك بطريقة ممتعة
+            وبأسئلة تقيس الفهم والتطبيق وليس الحفظ فقط.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2 class="section-title">📚 وحدات المنهج</h2>
+
+        <div class="units">
+
+
+            <!-- الوحدة الأولى -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">01</div>
+
+                <h3>🌱 تنوع الحياة</h3>
+
+                <p>
+                    التعرف على تنوع المخلوقات الحية
+                    وتصنيفها ودراسة تكاثرها ودورات حياتها.
+                </p>
+
+
+                <div class="lessons">
+
+                    <button class="lesson"
+                        onclick="openLesson('classification')">
+
+                        <span>🔬</span>
+
+                        <div>
+
+                            <strong>
+                                تصنيف المخلوقات الحية
+                            </strong>
+
+                            <small>
+                                التصنيف والممالك والمجموعات
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('plants')">
+
+                        <span>🌿</span>
+
+                        <div>
+
+                            <strong>
+                                النباتات
+                            </strong>
+
+                            <small>
+                                خصائص النباتات وتنوعها
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('reproduction')">
+
+                        <span>🧬</span>
+
+                        <div>
+
+                            <strong>
+                                التكاثر
+                            </strong>
+
+                            <small>
+                                كيف تنتج المخلوقات الحية أفرادًا جديدة؟
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('life-cycles')">
+
+                        <span>🔄</span>
+
+                        <div>
+
+                            <strong>
+                                دورات الحياة
+                            </strong>
+
+                            <small>
+                                مراحل حياة المخلوقات الحية
+                            </small>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الوحدة الثانية -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">02</div>
+
+                <h3>🌎 الأنظمة البيئية</h3>
+
+                <p>
+                    دراسة العلاقات بين المخلوقات الحية
+                    والبيئة والتكيف والتغيرات في الأنظمة البيئية.
+                </p>
+
+
+                <div class="lessons">
+
+                    <button class="lesson"
+                        onclick="openLesson('ecosystems')">
+
+                        <span>🌳</span>
+
+                        <div>
+
+                            <strong>
+                                التفاعلات في الأنظمة البيئية
+                            </strong>
+
+                            <small>
+                                العلاقات والتفاعلات بين المخلوقات
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('adaptation')">
+
+                        <span>🦎</span>
+
+                        <div>
+
+                            <strong>
+                                التكيف والبقاء
+                            </strong>
+
+                            <small>
+                                كيف تساعد الصفات المخلوقات على البقاء؟
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('cycles')">
+
+                        <span>♻️</span>
+
+                        <div>
+
+                            <strong>
+                                الدورات في الأنظمة البيئية
+                            </strong>
+
+                            <small>
+                                انتقال المواد في البيئة
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('environment-change')">
+
+                        <span>🌦️</span>
+
+                        <div>
+
+                            <strong>
+                                التغيرات في الأنظمة البيئية
+                            </strong>
+
+                            <small>
+                                أسباب التغير وتأثيراته
+                            </small>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الوحدة الثالثة -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">03</div>
+
+                <h3>⛰️ الأرض ومواردها</h3>
+
+                <p>
+                    التعرف على سطح الأرض ومواردها
+                    وكيفية المحافظة عليها.
+                </p>
+
+
+                <div class="lessons">
+
+                    <button class="lesson"
+                        onclick="openLesson('earth-surface')">
+
+                        <span>🏔️</span>
+
+                        <div>
+
+                            <strong>
+                                معالم سطح الأرض
+                            </strong>
+
+                            <small>
+                                أشكال سطح الأرض وتنوعها
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('earth-processes')">
+
+                        <span>🌋</span>
+
+                        <div>
+
+                            <strong>
+                                العمليات المؤثرة في سطح الأرض
+                            </strong>
+
+                            <small>
+                                التغيرات التي تحدث لسطح الأرض
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('energy')">
+
+                        <span>⚡</span>
+
+                        <div>
+
+                            <strong>
+                                مصادر الطاقة
+                            </strong>
+
+                            <small>
+                                مصادر الطاقة واستخداماتها
+                            </small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="lesson"
+                        onclick="openLesson('air-water')">
+
+                        <span>💧</span>
+
+                        <div>
+
+                            <strong>
+                                الهواء والماء
+                            </strong>
+
+                            <small>
+                                أهمية الموارد وكيفية المحافظة عليها
+                            </small>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- الاختبارات -->
+
+    <section class="quiz-section">
+
+        <h2 class="section-title">
+            📝 اختبر نفسك
+        </h2>
+
+        <p class="quiz-description">
+            الاختبارات مصممة بدرجات مختلفة من الصعوبة.
+        </p>
+
+
+        <div class="quiz-levels">
+
+
+            <button class="quiz-level easy"
+                onclick="startQuiz('easy')">
+
+                <span>🟢</span>
+
+                <div>
+
+                    <strong>
+                        المستوى الأساسي
+                    </strong>
+
+                    <small>
+                        تثبيت المفاهيم الأساسية
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <button class="quiz-level medium"
+                onclick="startQuiz('medium')">
+
+                <span>🟡</span>
+
+                <div>
+
+                    <strong>
+                        المستوى المتوسط
+                    </strong>
+
+                    <small>
+                        تطبيق وتمييز بين المفاهيم
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <button class="quiz-level hard"
+                onclick="startQuiz('hard')">
+
+                <span>🔴</span>
+
+                <div>
+
+                    <strong>
+                        مستوى التحدي
+                    </strong>
+
+                    <small>
+                        استنتاج وربط وتحليل
+                    </small>
+
+                </div>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- التحدي -->
+
+    <section class="challenge">
+
+        <div class="challenge-icon">
+            🏆
+        </div>
+
+        <h2>
+            هل أنت مستعد للتحدي؟
+        </h2>
+
+        <p>
+            لا تعتمد على الحفظ فقط...
+            حاول فهم السؤال واكتشاف المعلومة المطلوبة.
+        </p>
+
+        <button onclick="startQuiz('hard')">
+            ابدأ اختبار التحدي 🚀
+        </button>
+
+    </section>
+
+</main>
+
+
+
+<!-- نافذة الدرس -->
+
+<div id="lessonModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close"
+            onclick="closeLesson()">
+            ×
+        </button>
+
+        <div id="lessonContent"></div>
+
+    </div>
 
 </div>
 
 
-<!-- التحضير -->
-<div id="prepare" class="page">
 
-<h1>🎯 استعد للدرس</h1>
+<!-- نافذة الاختبار -->
 
-<p>
-اليوم سنتعلم كيف يصنف العلماء المخلوقات الحية في مجموعات.
-</p>
+<div id="quizModal" class="modal">
 
-<div class="card">
-<h2>ماذا سنتعلم؟</h2>
+    <div class="modal-content">
 
-<ul>
-<li>🔬 لماذا نصنف المخلوقات الحية؟</li>
-<li>🌱 كيف تختلف المخلوقات الحية؟</li>
-<li>🐾 ما أهم مجموعاتها؟</li>
-<li>🦠 ما بعض المخلوقات الدقيقة؟</li>
-</ul>
-</div>
+        <button class="close"
+            onclick="closeQuiz()">
+            ×
+        </button>
 
-<p>
-⭐ هدفنا: أن تستطيع شرح فكرة تصنيف المخلوقات الحية بطريقة بسيطة.
-</p>
+        <div id="quizContent"></div>
 
-<button class="nextBtn" onclick="showPage('lesson')">
-📚 ابدأ الشرح
-</button>
+    </div>
 
 </div>
 
 
-<!-- الشرح -->
-<div id="lesson" class="page">
 
-<h1>📚 شرح الدرس</h1>
+<footer>
 
-<div class="card">
-<h2>1️⃣ ما التصنيف؟</h2>
-<p>
-التصنيف هو ترتيب المخلوقات الحية في مجموعات
-بحسب الصفات المشتركة بينها.
-</p>
-</div>
+    <strong>
+        مساعد العلوم 🔬
+    </strong>
 
-<div class="card">
-<h2>2️⃣ لماذا نصنف المخلوقات؟</h2>
-<p>
-يساعد التصنيف العلماء على دراسة المخلوقات الحية
-ومعرفة أوجه التشابه والاختلاف بينها.
-</p>
-</div>
+    <p>
+        أنا صديقكم فيصل الزامل
+    </p>
 
-<div class="card">
-<h2>3️⃣ الحيوانات</h2>
-<p>
-من الحيوانات ما له عمود فقري، وتسمى فقاريات،
-ومنها ما ليس له عمود فقري، وتسمى لافقاريات.
-</p>
-</div>
+    <p>
+        علوم الصف الخامس الابتدائي
+    </p>
 
-<div class="card">
-<h2>4️⃣ النباتات</h2>
-<p>
-النباتات مخلوقات حية تصنع غذاءها بنفسها
-باستخدام ضوء الشمس.
-</p>
-</div>
+    <small>
+        تعلم • راجع • اختبر نفسك
+    </small>
 
-<div class="card">
-<h2>5️⃣ مخلوقات أخرى</h2>
-<p>
-توجد مخلوقات حية صغيرة جدًا، ومنها البكتيريا
-وبعض المخلوقات وحيدة الخلية.
-</p>
-</div>
+</footer>
 
-<button class="nextBtn" onclick="showPage('summary')">
-📌 شاهد الملخص
-</button>
 
-</div>
 
-
-<!-- الملخص -->
-<div id="summary" class="page">
-
-<h1>📌 ملخص الدرس</h1>
-
-<div class="card">
-<p>
-🌱 المخلوقات الحية تختلف في صفاتها.
-</p>
-
-<p>
-🔬 يستخدم العلماء التصنيف لترتيب المخلوقات في مجموعات.
-</p>
-
-<p>
-🐾 الحيوانات منها فقاريات ولافقاريات.
-</p>
-
-<p>
-🌿 النباتات تصنع غذاءها بنفسها.
-</p>
-
-<p>
-🦠 توجد مخلوقات حية دقيقة جدًا.
-</p>
-</div>
-
-<button class="nextBtn" onclick="showPage('review')">
-🧠 ابدأ المراجعة
-</button>
-
-</div>
-
-
-<!-- المراجعة -->
-<div id="review" class="page">
-
-<h1>🧠 مراجعة سريعة</h1>
-
-<div class="card">
-<h2>تذكر!</h2>
-
-<p>
-التصنيف = تجميع المخلوقات الحية
-بحسب الصفات المشتركة.
-</p>
-
-<p>
-🐶 الحيوان الذي له عمود فقري يسمى فقاريًا.
-</p>
-
-<p>
-🌳 النبات يستطيع صنع غذائه بنفسه.
-</p>
-
-<p>
-🦠 بعض المخلوقات الحية صغيرة جدًا ولا يمكن رؤيتها
-بالعين المجردة.
-</p>
-</div>
-
-<button class="nextBtn" onclick="startQuiz()">
-📝 ابدأ الاختبار
-</button>
-
-</div>
-
-
-<!-- الاختبار -->
-<div id="quiz" class="page">
-
-<h1>📝 اختبار العلوم</h1>
-
-<h2 id="questionNumber"></h2>
-
-<h3 id="question"></h3>
-
-<div id="answers"></div>
-
-<p id="feedback"></p>
-
-<button id="nextQuestion" class="nextBtn"
-onclick="nextQuestion()" style="display:none;">
-➡️ السؤال التالي
-</button>
-
-</div>
-
-
-<!-- النتيجة -->
-<div id="resultPage" class="page">
-
-<h1>🏆 انتهى الاختبار!</h1>
-
-<p>أحسنت على إكمال الاختبار 🎉</p>
-
-<div id="finalScore" class="score"></div>
-
-<p id="message"></p>
-
-<button class="nextBtn" onclick="startQuiz()">
-🔄 إعادة الاختبار
-</button>
-
-<button class="mainBtn" onclick="showPage('home')">
-🏠 الصفحة الرئيسية
-</button>
-
-</div>
-
-</div>
-
-
-<script>
-
-const questions = [
-
-{
-question: "أي مما يلي يُعد مخلوقًا حيًا؟",
-answers: ["🪨 الصخرة", "🌳 الشجرة", "🪑 الكرسي"],
-correct: 1
-},
-
-{
-question: "لماذا يصنف العلماء المخلوقات الحية؟",
-answers: [
-"🔬 لتسهيل دراستها",
-"🎨 لتغيير ألوانها",
-"📏 لزيادة حجمها"
-],
-correct: 0
-},
-
-{
-question: "أي مما يلي من الفقاريات؟",
-answers: [
-"🐟 السمكة",
-"🪱 الدودة",
-"🦋 الفراشة"
-],
-correct: 0
-},
-
-{
-question: "أي مخلوق يصنع غذاءه بنفسه؟",
-answers: [
-"🌳 النبات",
-"🐱 القط",
-"🐟 السمكة"
-],
-correct: 0
-},
-
-{
-question: "أي مما يلي مخلوق حي؟",
-answers: [
-"🚗 السيارة",
-"🐶 الكلب",
-"🪑 الكرسي"
-],
-correct: 1
-},
-
-{
-question: "ما المقصود بالتصنيف؟",
-answers: [
-"📚 ترتيب المخلوقات في مجموعات",
-"🎨 تلوين المخلوقات",
-"📏 قياس المخلوقات"
-],
-correct: 0
-},
-
-{
-question: "الحيوانات التي لها عمود فقري تسمى:",
-answers: [
-"🐾 فقاريات",
-"🌱 نباتات",
-"🦠 بكتيريا"
-],
-correct: 0
-},
-
-{
-question: "أي مما يلي نبات؟",
-answers: [
-"🌳 شجرة",
-"🐱 قط",
-"🐟 سمكة"
-],
-correct: 0
-},
-
-{
-question: "هل توجد مخلوقات حية صغيرة جدًا؟",
-answers: [
-"✅ نعم",
-"❌ لا"
-],
-correct: 0
-},
-
-{
-question: "التصنيف يساعد العلماء على دراسة المخلوقات الحية.",
-answers: [
-"✅ صح",
-"❌ خطأ"
-],
-correct: 0
-}
-
-];
-
-let currentQuestion = 0;
-let score = 0;
-let answered = false;
-
-
-function showPage(pageId) {
-
-document.querySelectorAll(".page").forEach(page => {
-page.style.display = "none";
-});
-
-document.getElementById(pageId).style.display = "block";
-
-window.scrollTo(0,0);
-}
-
-
-function startQuiz() {
-
-currentQuestion = 0;
-score = 0;
-
-showPage("quiz");
-
-showQuestion();
-
-}
-
-
-function showQuestion() {
-
-answered = false;
-
-document.getElementById("feedback").innerHTML = "";
-
-document.getElementById("nextQuestion").style.display = "none";
-
-document.getElementById("questionNumber").innerHTML =
-"السؤال " + (currentQuestion + 1) +
-" من " + questions.length;
-
-document.getElementById("question").innerHTML =
-questions[currentQuestion].question;
-
-const answersDiv = document.getElementById("answers");
-
-answersDiv.innerHTML = "";
-
-questions[currentQuestion].answers.forEach((answer,index) => {
-
-const button = document.createElement("button");
-
-button.className = "answer";
-
-button.innerHTML = answer;
-
-button.onclick = function() {
-
-checkAnswer(index,button);
-
-};
-
-answersDiv.appendChild(button);
-
-});
-
-}
-
-
-function checkAnswer(selected,button) {
-
-if(answered) return;
-
-answered = true;
-
-const correct = questions[currentQuestion].correct;
-
-if(selected === correct) {
-
-score++;
-
-button.classList.add("correct");
-
-document.getElementById("feedback").innerHTML =
-"🎉 أحسنت! إجابة صحيحة.";
-
-} else {
-
-button.classList.add("wrong");
-
-document.getElementById("feedback").innerHTML =
-"❌ إجابة غير صحيحة.";
-
-document.querySelectorAll(".answer")[correct]
-.classList.add("correct");
-
-}
-
-document.getElementById("nextQuestion").style.display =
-"inline-block";
-
-}
-
-
-function nextQuestion() {
-
-currentQuestion++;
-
-if(currentQuestion < questions.length) {
-
-showQuestion();
-
-} else {
-
-showResult();
-
-}
-
-}
-
-
-function showResult() {
-
-showPage("resultPage");
-
-document.getElementById("finalScore").innerHTML =
-score + " / " + questions.length;
-
-let message = "";
-
-if(score === 10) {
-
-message = "🏆 ممتاز جدًا! حصلت على الدرجة الكاملة!";
-
-} else if(score >= 8) {
-
-message = "🌟 رائع! مستواك ممتاز.";
-
-} else if(score >= 5) {
-
-message = "👏 جيد جدًا، راجع بعض المعلومات وحاول مرة أخرى.";
-
-} else {
-
-message = "💪 لا بأس! راجع الدرس وحاول مرة أخرى.";
-
-}
-
-document.getElementById("message").innerHTML = message;
-
-}
-
-</script>
+<script src="app.js"></script>
 
 </body>
 </html>
