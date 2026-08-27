@@ -759,3 +759,14 @@ footer small {
     }
 
 }
+/* إخفاء النص القديم لأن الصورة تحتوي على النص كاملًا */
+.hero-icon,
+.hero h1,
+.hero p,
+.hero .semester {
+    display: none;
+}
+
+.hero {
+    padding: 0;
+}
