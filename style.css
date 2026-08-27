@@ -1,5 +1,20 @@
+/* ==========================================
+   مساعد العلوم - الصف الخامس الابتدائي
+   style.css
+   إعداد: فيصل الزامل
+   ========================================== */
+
+
+/* ==========================================
+   الإعدادات العامة
+   ========================================== */
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -7,136 +22,289 @@ body {
     font-family: Arial, Tahoma, sans-serif;
     background: #f4f7ff;
     color: #172033;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.8;
 }
 
-header {
-    background: linear-gradient(135deg, #2457d6, #4b7cf0);
+
+/* ==========================================
+   الرأس الرئيسي
+   ========================================== */
+
+.hero {
+    background: linear-gradient(135deg, #2457d6, #3b82f6);
     color: white;
-    padding: 28px 18px;
     text-align: center;
+    padding: 45px 20px 50px;
 }
 
-header h1 {
+.hero-icon {
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+.hero h1 {
     margin: 0 0 8px;
+    font-size: 42px;
+}
+
+.hero p {
+    margin: 5px 0;
+    font-size: 21px;
+}
+
+.semester {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.18);
+    font-size: 17px;
+}
+
+
+/* ==========================================
+   الحاوية
+   ========================================== */
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+
+/* ==========================================
+   الترحيب
+   ========================================== */
+
+.welcome {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 45px;
+    box-shadow: 0 8px 25px rgba(20, 40, 80, 0.08);
+}
+
+.welcome h2 {
+    margin-top: 0;
+    color: #2457d6;
     font-size: 30px;
 }
 
-header p {
-    margin: 0;
-    opacity: 0.9;
+.welcome p {
+    font-size: 19px;
+    margin-bottom: 15px;
 }
 
-.container {
-    max-width: 760px;
-    margin: 22px auto;
-    padding: 0 14px;
+
+/* ==========================================
+   عناوين الأقسام
+   ========================================== */
+
+.section-title {
+    color: #172033;
+    font-size: 32px;
+    margin: 35px 0 20px;
 }
 
-.card {
+
+/* ==========================================
+   الوحدات
+   ========================================== */
+
+.units {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.unit-card {
+    position: relative;
     background: white;
-    border-radius: 22px;
-    padding: 22px;
-    box-shadow: 0 8px 28px rgba(28, 61, 122, 0.10);
-    margin-bottom: 18px;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(20, 40, 80, 0.08);
+    overflow: hidden;
 }
 
-button {
-    border: 0;
-    border-radius: 14px;
-    padding: 13px 20px;
-    font-size: 17px;
+.unit-number {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2457d6;
+    opacity: 0.25;
+}
+
+.unit-card h3 {
+    margin: 0 0 10px;
+    color: #2457d6;
+    font-size: 27px;
+}
+
+.unit-card > p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #4b5563;
+}
+
+
+/* ==========================================
+   دروس الوحدة
+   ========================================== */
+
+.lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lesson {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    border-radius: 18px;
+    padding: 18px;
+    background: #f1f4fa;
+    color: #172033;
+    text-align: right;
+    direction: rtl;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.lesson:hover {
+    background: #e8efff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(30, 70, 140, 0.08);
+}
+
+.lesson > span {
+    font-size: 32px;
+    min-width: 45px;
+    text-align: center;
+}
+
+.lesson strong {
+    display: block;
+    color: #2457d6;
+    font-size: 19px;
+}
+
+.lesson small {
+    display: block;
+    color: #667085;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+
+/* ==========================================
+   قسم الاختبارات
+   ========================================== */
+
+.quiz-section {
+    margin-top: 50px;
+}
+
+.quiz-description {
+    font-size: 18px;
+    color: #667085;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.quiz-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.quiz-level {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    background: white;
+    color: #172033;
+    text-align: right;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(20, 40, 80, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-level:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(20, 40, 80, 0.12);
+}
+
+.quiz-level > span {
+    font-size: 30px;
+}
+
+.quiz-level strong {
+    display: block;
+    font-size: 20px;
+}
+
+.quiz-level small {
+    display: block;
+    color: #667085;
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   التحدي
+   ========================================== */
+
+.challenge {
+    margin-top: 45px;
+    padding: 35px 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #edf3ff);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(20, 40, 80, 0.08);
+}
+
+.challenge-icon {
+    font-size: 55px;
+}
+
+.challenge h2 {
+    color: #2457d6;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.challenge p {
+    font-size: 18px;
+    color: #667085;
+}
+
+.challenge button {
+    border: none;
+    border-radius: 16px;
+    padding: 15px 28px;
+    background: #2457d6;
+    color: white;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.primary {
-    background: #2457d6;
-    color: white;
-}
 
-.secondary {
-    background: #eaf0ff;
-    color: #2457d6;
-}
-
-.row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.badge {
-    display: inline-block;
-    background: #eaf0ff;
-    color: #2457d6;
-    padding: 7px 12px;
-    border-radius: 999px;
-    font-weight: bold;
-}
-
-.small {
-    color: #667085;
-}
-
-.options {
-    display: grid;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.option {
-    width: 100%;
-    border: 2px solid #e3e8f4;
-    background: #fafbff;
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 17px;
-    text-align: right;
-}
-
-.option:hover {
-    border-color: #5d82e8;
-}
-
-.option.correct {
-    background: #e9f8ee;
-    border-color: #2e9d55;
-}
-
-.option.wrong {
-    background: #fff0f0;
-    border-color: #d94b4b;
-}
-
-.progress {
-    height: 9px;
-    background: #e8ecf5;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 16px;
-}
-
-.progress div {
-    height: 100%;
-    background: #2457d6;
-    width: 0;
-}
-
-.hidden {
-    display: none;
-}
-
-.result {
-    text-align: center;
-}
-
-.score {
-    font-size: 58px;
-    color: #2457d6;
-    font-weight: 800;
-}/* ==========================================
-   النوافذ المنبثقة للدروس والاختبارات
+/* ==========================================
+   النوافذ المنبثقة
    ========================================== */
 
 .modal {
@@ -145,33 +313,40 @@ button {
     inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 32, 51, 0.65);
-    z-index: 9999;
+    padding: 15px;
+    background: rgba(10, 25, 50, 0.7);
+    z-index: 99999;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
 }
 
 .modal.show {
     display: flex;
 }
 
+
+/* ==========================================
+   محتوى النافذة
+   ========================================== */
+
 .modal-content {
     position: relative;
     width: 100%;
-    max-width: 700px;
+    max-width: 720px;
     max-height: 90vh;
     overflow-y: auto;
     background: white;
-    border-radius: 24px;
+    border-radius: 25px;
     padding: 30px;
-    box-sizing: border-box;
-    text-align: right;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
     direction: rtl;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+    text-align: right;
 }
+
+
+/* ==========================================
+   زر الإغلاق
+   ========================================== */
 
 .close {
     position: sticky;
@@ -181,77 +356,112 @@ button {
     height: 45px;
     border: none;
     border-radius: 50%;
-    background: #eef3f8;
-    color: #2457a6;
+    background: #eef3ff;
+    color: #2457d6;
     font-size: 30px;
     line-height: 1;
     cursor: pointer;
-    z-index: 10;
+    z-index: 20;
 }
 
-.lesson-header h2 {
-    color: #2457a6;
-    font-size: 28px;
-    margin-top: 10px;
-}
-
-.lesson-big-icon {
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.lesson-info {
-    font-size: 18px;
-    line-height: 1.9;
-}
-
-.lesson-info h3 {
-    color: #2457a6;
-    margin-top: 25px;
-}
-
-.lesson-info li {
-    margin-bottom: 10px;
+.close:hover {
+    background: #dfe8ff;
 }
 
 
 /* ==========================================
-   الاختبار
+   محتوى الدرس
+   ========================================== */
+
+.lesson-header {
+    clear: both;
+}
+
+.lesson-big-icon {
+    text-align: center;
+    font-size: 55px;
+    margin: 5px 0 10px;
+}
+
+.lesson-header h2 {
+    color: #2457d6;
+    font-size: 30px;
+    margin: 10px 0 20px;
+}
+
+.lesson-info {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.lesson-info h3 {
+    color: #2457d6;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.lesson-info p {
+    margin: 10px 0;
+}
+
+.lesson-info ul {
+    padding-right: 25px;
+}
+
+.lesson-info li {
+    margin-bottom: 8px;
+}
+
+
+/* ==========================================
+   رأس الاختبار
    ========================================== */
 
 .quiz-header {
+    clear: both;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 10px;
-    align-items: center;
     margin-bottom: 20px;
-    flex-wrap: wrap;
+    padding-top: 5px;
 }
 
 .quiz-level-title {
-    font-weight: bold;
-    color: #2457a6;
+    color: #2457d6;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .question-counter {
-    color: #555;
+    color: #667085;
     font-size: 16px;
 }
 
+
+/* ==========================================
+   السؤال
+   ========================================== */
+
 .question-box {
-    background: #f4f7ff;
+    background: #f3f6ff;
     border-radius: 20px;
     padding: 25px;
     margin-bottom: 20px;
+    border: 1px solid #e2e8f5;
 }
 
 .question-box h2 {
+    margin: 0;
+    color: #172033;
     font-size: 24px;
     line-height: 1.8;
-    margin: 0;
 }
+
+
+/* ==========================================
+   خيارات السؤال
+   ========================================== */
 
 .quiz-options {
     display: flex;
@@ -261,20 +471,24 @@ button {
 
 .quiz-option {
     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border: none;
     border-radius: 18px;
-    padding: 18px;
-    background: #f1f1f1;
-    color: #2457a6;
-    font-size: 19px;
+    padding: 17px;
+    background: #f0f1f3;
+    color: #2457d6;
+    font-size: 18px;
     font-weight: bold;
     text-align: right;
+    direction: rtl;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .quiz-option:hover {
-    background: #e5edff;
+    background: #e4ebff;
 }
 
 .quiz-option:disabled {
@@ -283,17 +497,23 @@ button {
 
 .option-number {
     display: inline-flex;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: white;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
     align-items: center;
     justify-content: center;
-    margin-left: 8px;
+    border-radius: 50%;
+    background: white;
+    color: #2457d6;
+    font-weight: bold;
 }
 
 .quiz-option.correct {
-    background: #d9f5df;
+    background: #d9f7df;
+    color: #187333;
+}
+
+.quiz-option.correct .option-number {
     color: #187333;
 }
 
@@ -302,37 +522,53 @@ button {
     color: #b42318;
 }
 
+.quiz-option.wrong .option-number {
+    color: #b42318;
+}
+
 
 /* ==========================================
-   النتيجة
+   نتيجة الاختبار
    ========================================== */
 
 .result {
+    clear: both;
     text-align: center;
-    padding: 20px 5px;
+    padding: 15px 5px 5px;
 }
 
 .result-icon {
     font-size: 65px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .result h2 {
+    color: #2457d6;
     font-size: 30px;
-    color: #2457a6;
+    margin: 5px 0 15px;
 }
 
 .score {
-    font-size: 45px;
-    font-weight: bold;
-    margin: 15px 0;
+    font-size: 48px;
+    color: #2457d6;
+    font-weight: 800;
 }
 
 .percentage {
     font-size: 28px;
+    color: #2457d6;
     font-weight: bold;
-    color: #2457a6;
+    margin: 5px 0;
 }
+
+.result > p {
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   أزرار النتيجة
+   ========================================== */
 
 .result-buttons {
     display: flex;
@@ -343,9 +579,10 @@ button {
 
 .main-action,
 .secondary-action {
+    width: 100%;
     border: none;
     border-radius: 16px;
-    padding: 16px 22px;
+    padding: 15px 20px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -356,39 +593,160 @@ button {
     color: white;
 }
 
+.main-action:hover {
+    background: #2457d6;
+}
+
 .secondary-action {
-    background: #eef3f8;
-    color: #2457a6;
+    background: #edf1f7;
+    color: #2457d6;
 }
 
 
 /* ==========================================
-   تحسين العرض على الجوال
+   الفوتر
+   ========================================== */
+
+footer {
+    margin-top: 20px;
+    padding: 35px 20px;
+    background: #172033;
+    color: white;
+    text-align: center;
+}
+
+footer strong {
+    font-size: 24px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #d9e0ed;
+}
+
+footer small {
+    color: #aeb8ca;
+}
+
+
+/* ==========================================
+   تحسين الجوال
    ========================================== */
 
 @media (max-width: 600px) {
 
+    .hero {
+        padding: 35px 15px 40px;
+    }
+
+    .hero-icon {
+        font-size: 45px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 20px 15px 45px;
+    }
+
+    .welcome {
+        padding: 22px;
+    }
+
+    .welcome h2 {
+        font-size: 25px;
+    }
+
+    .welcome p {
+        font-size: 17px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .unit-card {
+        padding: 22px;
+    }
+
+    .unit-card h3 {
+        font-size: 24px;
+    }
+
+    .lesson {
+        padding: 15px;
+    }
+
+    .lesson > span {
+        font-size: 27px;
+        min-width: 38px;
+    }
+
+    .lesson strong {
+        font-size: 17px;
+    }
+
+    .lesson small {
+        font-size: 14px;
+    }
+
+    .quiz-level {
+        padding: 17px;
+    }
+
+    .quiz-level strong {
+        font-size: 18px;
+    }
+
+    .challenge {
+        padding: 28px 20px;
+    }
+
     .modal {
-        padding: 10px;
+        padding: 8px;
     }
 
     .modal-content {
-        max-height: 92vh;
+        max-height: 94vh;
         padding: 20px;
         border-radius: 20px;
     }
 
+    .question-box {
+        padding: 18px;
+    }
+
     .question-box h2 {
         font-size: 20px;
+        line-height: 1.7;
     }
 
     .quiz-option {
-        font-size: 17px;
-        padding: 16px;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .quiz-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .lesson-header h2 {
+        font-size: 25px;
     }
 
     .lesson-info {
-        font-size: 17px;
+        font-size: 16px;
+    }
+
+    .score {
+        font-size: 42px;
     }
 
 }
