@@ -743,11 +743,6 @@ function openLesson(id) {
 
     content.innerHTML = `
 
-        <button class="close"
-                onclick="closeLesson()">
-            ×
-        </button>
-
         <div class="lesson-header">
 
             <div class="lesson-big-icon">
