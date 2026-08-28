@@ -2485,6 +2485,200 @@ function getFirstArabicLetter(text) {
 function submitLettersAnswer() {
 
     const input =
+        document.getElementById("lettersAnswerInput");
+
+    const message =
+        document.getElementById("lettersAnswerMessage");
+
+    if (!input || !message) {
+        return;
+    }
+
+    const userAnswer =
+        input.value.trim();
+
+    if (!userAnswer) {
+
+        message.innerHTML =
+            "⚠️ اكتب إجابة أولًا.";
+
+        message.className =
+            "letters-answer-message wrong";
+
+        return;
+    }
+
+
+    const index =
+        lettersGameSelectedIndex;
+
+    const cell =
+        lettersGameBoard[index];
+
+    if (!cell) {
+        return;
+    }
+
+
+    const question =
+        lettersGameQuestions[cell.letter];
+
+    if (!question) {
+        return;
+    }
+
+
+    // -------------------------------------------------
+    // تنظيف إجابة الطالب
+    // -------------------------------------------------
+
+    const normalizedUserAnswer =
+        normalizeArabicAnswer(userAnswer);
+
+
+    // -------------------------------------------------
+    // التحقق من أول حرف
+    // -------------------------------------------------
+
+    const firstLetter =
+        getFirstArabicLetter(userAnswer);
+
+    const expectedFirstLetter =
+        getFirstArabicLetter(cell.letter);
+
+
+    if (firstLetter !== expectedFirstLetter) {
+
+        message.innerHTML = `
+            ❌ الإجابة يجب أن تبدأ بحرف
+            <strong>${cell.letter}</strong>
+        `;
+
+        message.className =
+            "letters-answer-message wrong";
+
+        return;
+    }
+
+
+    // -------------------------------------------------
+    // الإجابات المقبولة
+    // -------------------------------------------------
+
+    const acceptedAnswers =
+        question.answers.map(function(answer) {
+
+            return normalizeArabicAnswer(answer);
+
+        });
+
+
+    // -------------------------------------------------
+    // مقارنة الإجابة
+    // -------------------------------------------------
+
+    const isCorrect =
+        acceptedAnswers.some(function(answer) {
+
+            return (
+                normalizedUserAnswer === answer
+            );
+
+        });
+
+
+    // =================================================
+    // إجابة صحيحة
+    // =================================================
+
+    if (isCorrect) {
+
+        message.innerHTML =
+            "🎉 إجابة صحيحة! حصلتم على الخانة.";
+
+        message.className =
+            "letters-answer-message correct";
+
+
+        cell.owner =
+            lettersCurrentTeam;
+
+
+        setTimeout(function() {
+
+            const winningTeam =
+                checkLettersWinner(
+                    lettersCurrentTeam
+                );
+
+
+            if (winningTeam) {
+
+                lettersGameWinner =
+                    winningTeam;
+
+            }
+
+            else {
+
+                lettersCurrentTeam =
+                    lettersCurrentTeam === "blue"
+                        ? "red"
+                        : "blue";
+
+            }
+
+
+            lettersGameSelectedIndex =
+                null;
+
+
+            renderLettersGame();
+
+        }, 800);
+
+
+    }
+
+    // =================================================
+    // إجابة خاطئة
+    // =================================================
+
+    else {
+
+        message.innerHTML = `
+            ❌ ليست الإجابة الصحيحة.
+            <br>
+            لا يحصل الفريق على الخانة.
+            <br><br>
+            🔄 ينتقل الدور للفريق الآخر.
+        `;
+
+        message.className =
+            "letters-answer-message wrong";
+
+
+        setTimeout(function() {
+
+            lettersCurrentTeam =
+                lettersCurrentTeam === "blue"
+                    ? "red"
+                    : "blue";
+
+
+            lettersGameSelectedIndex =
+                null;
+
+
+            renderLettersGame();
+
+        }, 1200);
+
+    }
+
+}
+
+    const input =
         document.getElementById(
             "lettersAnswerInput"
         );
