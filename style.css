@@ -921,3 +921,209 @@ footer small {
     }
 
 }
+/* =====================================================
+   لعبة الحروف
+   ===================================================== */
+
+.letters-game-modal {
+    max-width: 900px;
+}
+
+.letters-game {
+    width: 100%;
+    text-align: center;
+}
+
+.letters-game-header {
+    margin-bottom: 20px;
+}
+
+.letters-game-header h2 {
+    margin: 5px 0;
+    color: #2457d6;
+    font-size: 34px;
+}
+
+.letters-game-header p {
+    margin: 5px 0 20px;
+    color: #667085;
+    font-size: 18px;
+}
+
+
+/* فرق اللعبة */
+
+.letters-teams {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.letters-team {
+    padding: 15px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    background: #f1f4fa;
+    border: 3px solid transparent;
+}
+
+.letters-team.blue {
+    color: #155eef;
+    border-color: #155eef;
+}
+
+.letters-team.red {
+    color: #d92d20;
+    border-color: #d92d20;
+}
+
+.letters-team.active {
+    box-shadow: 0 0 0 4px rgba(36, 87, 214, 0.12);
+    transform: scale(1.02);
+}
+
+
+/* الفريق الحالي */
+
+.letters-turn {
+    margin-bottom: 20px;
+    padding: 12px 18px;
+    border-radius: 16px;
+    background: #edf3ff;
+    color: #2457d6;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+/* لوحة الحروف */
+
+.letters-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+
+/* الخانة */
+
+.letter-cell {
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 14px;
+
+    background: #f1f4fa;
+    color: #172033;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(20, 40, 80, 0.08);
+
+    transition:
+        transform 0.15s,
+        box-shadow 0.15s,
+        background 0.15s;
+}
+
+.letter-cell:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(20, 40, 80, 0.12);
+}
+
+
+/* خانة الفريق الأزرق */
+
+.letter-cell.blue {
+    background: #155eef;
+    color: white;
+}
+
+
+/* خانة الفريق الأحمر */
+
+.letter-cell.red {
+    background: #d92d20;
+    color: white;
+}
+
+
+/* الخانة المحجوزة */
+
+.letter-cell:disabled {
+    cursor: default;
+}
+
+
+/* أزرار اللعبة */
+
+.letters-game-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.letters-reset {
+    border: none;
+    border-radius: 15px;
+    padding: 13px 24px;
+
+    background: #edf1f7;
+    color: #2457d6;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.letters-reset:hover {
+    background: #dfe8ff;
+}
+
+
+/* الجوال */
+
+@media (max-width: 600px) {
+
+    .letters-game-modal {
+        max-width: 100%;
+    }
+
+    .letters-game-header h2 {
+        font-size: 28px;
+    }
+
+    .letters-game-header p {
+        font-size: 16px;
+    }
+
+    .letters-teams {
+        gap: 8px;
+    }
+
+    .letters-team {
+        padding: 11px 6px;
+        font-size: 15px;
+    }
+
+    .letters-board {
+        gap: 6px;
+    }
+
+    .letter-cell {
+        border-radius: 10px;
+        font-size: 23px;
+    }
+
+    .letters-turn {
+        font-size: 16px;
+    }
+
+}
