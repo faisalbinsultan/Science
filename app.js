@@ -1770,3 +1770,72 @@ document.addEventListener(
 
     }
 );
+// =====================================================
+// لعبة الحروف - البداية
+// =====================================================
+
+function openLettersGame() {
+
+    const modal =
+        document.getElementById("lettersGameModal");
+
+    const content =
+        document.getElementById("lettersGameContent");
+
+    if (!modal || !content) {
+        return;
+    }
+
+    content.innerHTML = `
+
+        <div class="letters-game">
+
+            <div class="letters-game-header">
+
+                <div class="letters-game-icon">
+                    🔤
+                </div>
+
+                <h2>
+                    لعبة الحروف
+                </h2>
+
+                <p>
+                    فريقان يتنافسان في أسئلة العلوم!
+                </p>
+
+            </div>
+
+            <div class="thinking-box">
+
+                🎮 اللعبة قادمة هنا...
+
+                <br><br>
+
+                أجب عن السؤال،
+                وإذا كانت إجابتك صحيحة
+                تحصل على الخانة.
+
+            </div>
+
+        </div>
+
+    `;
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeLettersGame() {
+
+    const modal =
+        document.getElementById("lettersGameModal");
+
+    if (modal) {
+        modal.classList.remove("show");
+    }
+
+    document.body.style.overflow = "";
+}
