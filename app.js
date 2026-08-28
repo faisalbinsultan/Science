@@ -16,189 +16,155 @@ const lessons = {
         icon: "🔬",
 
         content: `
+            <div class="lesson-card">
+                <div class="lesson-step">الدرس 1</div>
 
-        <div class="lesson-card">
+                <h2>🔬 تصنيف المخلوقات الحية</h2>
 
-            <div class="lesson-step">
-                الدرس 1
+                <p>
+                    أكثر من مليونَي نوع من المخلوقات الحية تم التعرف عليها،
+                    ولذلك يحتاج العلماء إلى طريقة لتنظيمها ودراستها.
+                </p>
+
+                <div class="thinking-box">
+                    🧠 السؤال الأساسي:
+                    <br>
+                    لماذا يصنف العلماء المخلوقات الحية؟
+                </div>
             </div>
 
-            <h2>🔬 تصنيف المخلوقات الحية</h2>
+            <div class="lesson-card">
+                <h3>🧠 ما علم التصنيف؟</h3>
 
-            <p>
-                أكثر من مليونَي نوع من المخلوقات الحية تم التعرف عليها،
-                ولذلك يحتاج العلماء إلى طريقة لتنظيمها ودراستها.
-            </p>
+                <p>
+                    التصنيف هو تقسيم المخلوقات الحية إلى مجموعات
+                    بحسب درجة التشابه في الشكل أو التركيب أو الوظائف
+                    بين أفراد كل مجموعة.
+                </p>
 
-            <div class="thinking-box">
-                🧠 السؤال الأساسي:
-                <br>
-                لماذا يصنف العلماء المخلوقات الحية؟
+                <div class="thinking-box">
+                    💡 الفكرة المهمة:
+                    <br>
+                    كلما زاد التشابه بين المخلوقات،
+                    أمكن وضعها في مجموعة أكثر تحديدًا.
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🎯 لماذا يصنف العلماء المخلوقات؟</h3>
 
-
-        <div class="lesson-card">
-
-            <h3>🧠 ما علم التصنيف؟</h3>
-
-            <p>
-                التصنيف هو تقسيم المخلوقات الحية إلى مجموعات
-                بحسب درجة التشابه في الشكل أو التركيب أو الوظائف
-                بين أفراد كل مجموعة.
-            </p>
-
-            <div class="thinking-box">
-                💡 الفكرة المهمة:
-                <br>
-                كلما زاد التشابه بين المخلوقات،
-                أمكن وضعها في مجموعة أكثر تحديدًا.
+                <ul>
+                    <li>لتسهيل دراسة المخلوقات الحية.</li>
+                    <li>للتعرف عليها.</li>
+                    <li>لتسميتها.</li>
+                    <li>لوضعها في مجموعات منظمة.</li>
+                </ul>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🪜 مستويات التصنيف</h3>
 
+                <p>
+                    يصنف العلماء المخلوقات الحية في مستويات،
+                    من المجموعات الكبيرة إلى المجموعات الأصغر.
+                </p>
 
-        <div class="lesson-card">
+                <div class="classification-levels">
+                    <div>1️⃣ المملكة</div>
+                    <div>2️⃣ الشعبة</div>
+                    <div>3️⃣ الطائفة</div>
+                    <div>4️⃣ الرتبة</div>
+                    <div>5️⃣ الفصيلة</div>
+                    <div>6️⃣ الجنس</div>
+                    <div>7️⃣ النوع</div>
+                </div>
 
-            <h3>🎯 لماذا يصنف العلماء المخلوقات؟</h3>
-
-            <ul>
-                <li>لتسهيل دراسة المخلوقات الحية.</li>
-                <li>للتعرف عليها.</li>
-                <li>لتسميتها.</li>
-                <li>لوضعها في مجموعات منظمة.</li>
-            </ul>
-
-        </div>
-
-
-        <div class="lesson-card">
-
-            <h3>🪜 مستويات التصنيف</h3>
-
-            <p>
-                يصنف العلماء المخلوقات الحية في مستويات،
-                من المجموعات الكبيرة إلى المجموعات الأصغر.
-            </p>
-
-            <div class="classification-levels">
-
-                <div>1️⃣ المملكة</div>
-                <div>2️⃣ الشعبة</div>
-                <div>3️⃣ الطائفة</div>
-                <div>4️⃣ الرتبة</div>
-                <div>5️⃣ الفصيلة</div>
-                <div>6️⃣ الجنس</div>
-                <div>7️⃣ النوع</div>
-
+                <div class="thinking-box">
+                    ⭐ تذكر:
+                    <br>
+                    المملكة تضم عددًا أكبر من المخلوقات،
+                    بينما النوع هو أصغر مستوى ويضم مخلوقات متقاربة جدًا.
+                </div>
             </div>
 
-            <div class="thinking-box">
-                ⭐ تذكر:
-                <br>
-                المملكة تضم عددًا أكبر من المخلوقات،
-                بينما النوع هو أصغر مستوى ويضم مخلوقات متقاربة جدًا.
+            <div class="lesson-card">
+                <h3>🐎 مثال الحصان</h3>
+
+                <p>
+                    الحصان والحمار الوحشي يشتركان في صفات كثيرة،
+                    ولكنهما ليسا من النوع نفسه.
+                </p>
+
+                <p>
+                    أما الحصان والحصان القزم فهما متشابهان بدرجة
+                    تسمح بوضعهما في النوع نفسه.
+                </p>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🔎 الاسم العلمي</h3>
 
+                <p>
+                    يتألف الاسم العلمي للمخلوق الحي من مقطعين:
+                </p>
 
-        <div class="lesson-card">
+                <div class="name-science">
+                    <strong>الجنس + النوع</strong>
+                </div>
 
-            <h3>🐎 مثال الحصان</h3>
-
-            <p>
-                الحصان والحمار الوحشي يشتركان في صفات كثيرة،
-                ولكنهما ليسا من النوع نفسه.
-            </p>
-
-            <p>
-                أما الحصان والحصان القزم فهما متشابهان بدرجة
-                تسمح بوضعهما في النوع نفسه.
-            </p>
-
-        </div>
-
-
-        <div class="lesson-card">
-
-            <h3>🔎 الاسم العلمي</h3>
-
-            <p>
-                يتألف الاسم العلمي للمخلوق الحي من مقطعين:
-            </p>
-
-            <div class="name-science">
-                <strong>الجنس + النوع</strong>
+                <p>
+                    ويستخدم العلماء هذين المستويين لتحديد المخلوق
+                    بصورة أكثر دقة.
+                </p>
             </div>
 
-            <p>
-                ويستخدم العلماء هذين المستويين لتحديد المخلوق
-                بصورة أكثر دقة.
-            </p>
+            <div class="lesson-card">
+                <h3>🌍 الممالك الست</h3>
 
-        </div>
+                <p>
+                    تصنف المخلوقات الحية في ست ممالك رئيسة:
+                </p>
 
-
-        <div class="lesson-card">
-
-            <h3>🌍 الممالك الست</h3>
-
-            <p>
-                تصنف المخلوقات الحية في ست ممالك رئيسة:
-            </p>
-
-            <div class="kingdom-grid">
-
-                <div>🦠 البدائيات</div>
-                <div>🦠 البكتيريا</div>
-                <div>🧫 الطلائعيات</div>
-                <div>🍄 الفطريات</div>
-                <div>🌿 النباتات</div>
-                <div>🐾 الحيوانات</div>
-
+                <div class="kingdom-grid">
+                    <div>🦠 البدائيات</div>
+                    <div>🦠 البكتيريا</div>
+                    <div>🧫 الطلائعيات</div>
+                    <div>🍄 الفطريات</div>
+                    <div>🌿 النباتات</div>
+                    <div>🐾 الحيوانات</div>
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🐾 كيف نعرف درجة التقارب؟</h3>
 
+                <p>
+                    الحصان والعنكبوت والكلب جميعها تنتمي إلى
+                    المملكة الحيوانية، لكن الحصان والكلب يشتركان
+                    في مستويات تصنيف أكثر تحديدًا من الحصان والعنكبوت.
+                </p>
 
-        <div class="lesson-card">
-
-            <h3>🐾 كيف نعرف درجة التقارب؟</h3>
-
-            <p>
-                الحصان والعنكبوت والكلب جميعها تنتمي إلى
-                المملكة الحيوانية، لكن الحصان والكلب يشتركان
-                في مستويات تصنيف أكثر تحديدًا من الحصان والعنكبوت.
-            </p>
-
-            <div class="thinking-box">
-                🧠 لذلك:
-                <br>
-                كلما اشترك مخلوقان في مستويات تصنيف أكثر،
-                كانا أكثر تقاربًا في التصنيف.
+                <div class="thinking-box">
+                    🧠 لذلك:
+                    <br>
+                    كلما اشترك مخلوقان في مستويات تصنيف أكثر،
+                    كانا أكثر تقاربًا في التصنيف.
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card challenge-card">
+                <h3>🔥 تحدي سريع</h3>
 
+                <p>
+                    مخلوق حي عديد الخلايا، له جدار خلوي،
+                    لكنه لا يحتوي على بلاستيدات خضراء.
+                </p>
 
-        <div class="lesson-card challenge-card">
-
-            <h3>🔥 تحدي سريع</h3>
-
-            <p>
-                مخلوق حي عديد الخلايا، له جدار خلوي،
-                لكنه لا يحتوي على بلاستيدات خضراء.
-            </p>
-
-            <p>
-                لا تتسرع في الإجابة...
-                قارن صفاته بالممالك المختلفة.
-            </p>
-
-        </div>
-
+                <p>
+                    لا تتسرع في الإجابة...
+                    قارن صفاته بالممالك المختلفة.
+                </p>
+            </div>
         `
     },
 
@@ -208,278 +174,226 @@ const lessons = {
         icon: "🌿",
 
         content: `
+            <div class="lesson-card">
+                <div class="lesson-step">الدرس 2</div>
 
-        <div class="lesson-card">
+                <h2>🌿 مملكة النباتات</h2>
 
-            <div class="lesson-step">
-                الدرس 2
+                <p>
+                    النباتات مخلوقات حية تحتاج إلى الهواء والماء
+                    والمكان المناسب لكي تعيش وتنمو.
+                </p>
+
+                <div class="thinking-box">
+                    🧠 السؤال الأساسي:
+                    <br>
+                    ما أهم التراكيب الموجودة في النباتات؟
+                    وما وظائفها؟
+                </div>
             </div>
 
-            <h2>🌿 مملكة النباتات</h2>
+            <div class="lesson-card">
+                <h3>🔎 كيف تصنف النباتات؟</h3>
 
-            <p>
-                النباتات مخلوقات حية تحتاج إلى الهواء والماء
-                والمكان المناسب لكي تعيش وتنمو.
-            </p>
+                <p>
+                    تصنف النباتات إلى مجموعتين رئيسيتين:
+                </p>
 
-            <div class="thinking-box">
-                🧠 السؤال الأساسي:
-                <br>
-                ما أهم التراكيب الموجودة في النباتات؟
-                وما وظائفها؟
+                <div class="kingdom-grid">
+                    <div>🌱 نباتات لاوعائية</div>
+                    <div>🌳 نباتات وعائية</div>
+                </div>
+
+                <p>
+                    النباتات اللاوعائية ليس لها نظام نقل،
+                    لذلك تكون عادة صغيرة وتنمو قريبًا من سطح الأرض.
+                </p>
+
+                <p>
+                    أما النباتات الوعائية فلها أنابيب تنقل الماء
+                    والمواد الغذائية داخل النبات.
+                </p>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🌱 النباتات الوعائية</h3>
 
+                <p>
+                    تنقسم النباتات الوعائية إلى:
+                </p>
 
-        <div class="lesson-card">
+                <div class="classification-levels">
+                    <div>🌰 نباتات بذرية</div>
+                    <div>🌿 نباتات لا بذرية</div>
+                </div>
 
-            <h3>🔎 كيف تصنف النباتات؟</h3>
-
-            <p>
-                تصنف النباتات إلى مجموعتين رئيسيتين:
-            </p>
-
-            <div class="kingdom-grid">
-
-                <div>🌱 نباتات لاوعائية</div>
-                <div>🌳 نباتات وعائية</div>
-
+                <div class="thinking-box">
+                    🧠 انتبه:
+                    <br>
+                    ليس كل نبات وعائي ينتج بذورًا.
+                </div>
             </div>
 
-            <p>
-                النباتات اللاوعائية ليس لها نظام نقل،
-                لذلك تكون عادة صغيرة وتنمو قريبًا من سطح الأرض.
-            </p>
+            <div class="lesson-card">
+                <h3>🌰 النباتات البذرية</h3>
 
-            <p>
-                أما النباتات الوعائية فلها أنابيب تنقل الماء
-                والمواد الغذائية داخل النبات.
-            </p>
+                <p>
+                    النباتات البذرية تنتج بذورًا تساعد على إنتاج
+                    نبات جديد.
+                </p>
 
-        </div>
-
-
-        <div class="lesson-card">
-
-            <h3>🌱 النباتات الوعائية</h3>
-
-            <p>
-                تنقسم النباتات الوعائية إلى:
-            </p>
-
-            <div class="classification-levels">
-
-                <div>🌰 نباتات بذرية</div>
-                <div>🌿 نباتات لا بذرية</div>
-
+                <div class="classification-levels">
+                    <div>🌲 معراة البذور</div>
+                    <div>🌸 مغطاة البذور</div>
+                </div>
             </div>
 
-            <div class="thinking-box">
-                🧠 انتبه:
-                <br>
-                ليس كل نبات وعائي ينتج بذورًا.
+            <div class="lesson-card">
+                <h3>🌲 معراة البذور</h3>
+
+                <p>
+                    نباتات لا تنتج أزهارًا، وتكون بذورها داخل
+                    أعضاء تكاثر مخروطية الشكل.
+                </p>
+
+                <p>
+                    من أمثلتها: الصنوبر.
+                </p>
+
+                <div class="thinking-box">
+                    🧠 استنتج:
+                    <br>
+                    نبات لا ينتج أزهارًا وينتج بذورًا في مخاريط.
+                    إلى أي مجموعة تتوقع أن ينتمي؟
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🌸 مغطاة البذور</h3>
 
+                <p>
+                    النباتات المغطاة البذور هي نباتات بذرية
+                    تنتج أزهارًا.
+                </p>
 
-        <div class="lesson-card">
+                <p>
+                    وتحيط الثمرة ببذورها عادةً.
+                </p>
 
-            <h3>🌰 النباتات البذرية</h3>
+                <p>
+                    من أمثلتها: التفاح والخوخ والقرع.
+                </p>
 
-            <p>
-                النباتات البذرية تنتج بذورًا تساعد على إنتاج
-                نبات جديد.
-            </p>
-
-            <div class="classification-levels">
-
-                <div>🌲 معراة البذور</div>
-                <div>🌸 مغطاة البذور</div>
-
+                <div class="thinking-box">
+                    🔍 إذا رأيت نباتًا ينتج أزهارًا وثمارًا،
+                    فأي مجموعة من النباتات البذرية تتوقع أن ينتمي إليها؟
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🌿 النباتات اللابذرية</h3>
 
+                <p>
+                    النباتات اللابذرية لا تنتج بذورًا،
+                    ومنها السرخسيات وذيل الحصان.
+                </p>
 
-        <div class="lesson-card">
-
-            <h3>🌲 معراة البذور</h3>
-
-            <p>
-                نباتات لا تنتج أزهارًا، وتكون بذورها داخل
-                أعضاء تكاثر مخروطية الشكل.
-            </p>
-
-            <p>
-                من أمثلتها: الصنوبر.
-            </p>
-
-            <div class="thinking-box">
-                🧠 استنتج:
-                <br>
-                نبات لا ينتج أزهارًا وينتج بذورًا في مخاريط.
-                إلى أي مجموعة تتوقع أن ينتمي؟
+                <p>
+                    وتتكاثر بالأبواغ.
+                </p>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🌱 الجذور</h3>
 
+                <p>
+                    الجذر جزء من النبات يمتص الماء والأملاح المعدنية
+                    من التربة، ويدعم النبات ويثبته.
+                </p>
 
-        <div class="lesson-card">
+                <h3>أجزاء الجذر</h3>
 
-            <h3>🌸 مغطاة البذور</h3>
+                <ul>
+                    <li>البشرة</li>
+                    <li>الشعيرات الجذرية</li>
+                    <li>القشرة</li>
+                    <li>أوعية النقل</li>
+                    <li>القلنسوة</li>
+                </ul>
 
-            <p>
-                النباتات المغطاة البذور هي نباتات بذرية
-                تنتج أزهارًا.
-            </p>
-
-            <p>
-                وتحيط الثمرة ببذورها عادةً.
-            </p>
-
-            <p>
-                من أمثلتها: التفاح والخوخ والقرع.
-            </p>
-
-            <div class="thinking-box">
-                🔍 إذا رأيت نباتًا ينتج أزهارًا وثمارًا،
-                فأي مجموعة من النباتات البذرية تتوقع أن ينتمي إليها؟
+                <div class="thinking-box">
+                    💡 الشعيرات الجذرية تساعد النبات على
+                    امتصاص الماء والأملاح المعدنية.
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🌳 الساق</h3>
 
+                <p>
+                    الساق تدعم النبات وتساعد على نقل الماء
+                    والمواد الغذائية بين أجزاء النبات.
+                </p>
 
-        <div class="lesson-card">
-
-            <h3>🌿 النباتات اللابذرية</h3>
-
-            <p>
-                النباتات اللابذرية لا تنتج بذورًا،
-                ومنها السرخسيات وذيل الحصان.
-            </p>
-
-            <p>
-                وتتكاثر بالأبواغ.
-            </p>
-
-        </div>
-
-
-        <div class="lesson-card">
-
-            <h3>🌱 الجذور</h3>
-
-            <p>
-                الجذر جزء من النبات يمتص الماء والأملاح المعدنية
-                من التربة، ويدعم النبات ويثبته.
-            </p>
-
-            <h3>أجزاء الجذر</h3>
-
-            <ul>
-                <li>البشرة</li>
-                <li>الشعيرات الجذرية</li>
-                <li>القشرة</li>
-                <li>أوعية النقل</li>
-                <li>القلنسوة</li>
-            </ul>
-
-            <div class="thinking-box">
-                💡 الشعيرات الجذرية تساعد النبات على
-                امتصاص الماء والأملاح المعدنية.
+                <div class="classification-levels">
+                    <div>💧 الخشب → ينقل الماء والأملاح المعدنية</div>
+                    <div>🍬 اللحاء → ينقل السكر الذي يصنع في الأوراق</div>
+                    <div>🔄 الكامبيوم → ينتج خلايا الخشب واللحاء</div>
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>🍃 الأوراق</h3>
 
+                <p>
+                    الأوراق تراكيب تساعد النبات على القيام
+                    بعملية البناء الضوئي.
+                </p>
 
-        <div class="lesson-card">
-
-            <h3>🌳 الساق</h3>
-
-            <p>
-                الساق تدعم النبات وتساعد على نقل الماء
-                والمواد الغذائية بين أجزاء النبات.
-            </p>
-
-            <div class="classification-levels">
-
-                <div>💧 الخشب → ينقل الماء والأملاح المعدنية</div>
-
-                <div>🍬 اللحاء → ينقل السكر الذي يصنع في الأوراق</div>
-
-                <div>🔄 الكامبيوم → ينتج خلايا الخشب واللحاء</div>
-
+                <ul>
+                    <li>البشرة</li>
+                    <li>الطبقة الشمعية</li>
+                    <li>الثغور</li>
+                    <li>الخلايا الحارسة</li>
+                    <li>الخشب</li>
+                    <li>اللحاء</li>
+                </ul>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>☀️ البناء الضوئي</h3>
 
+                <p>
+                    يحتاج النبات للقيام بالبناء الضوئي إلى
+                    ضوء الشمس والماء وثاني أكسيد الكربون.
+                </p>
 
-        <div class="lesson-card">
-
-            <h3>🍃 الأوراق</h3>
-
-            <p>
-                الأوراق تراكيب تساعد النبات على القيام
-                بعملية البناء الضوئي.
-            </p>
-
-            <ul>
-                <li>البشرة</li>
-                <li>الطبقة الشمعية</li>
-                <li>الثغور</li>
-                <li>الخلايا الحارسة</li>
-                <li>الخشب</li>
-                <li>اللحاء</li>
-            </ul>
-
-        </div>
-
-
-        <div class="lesson-card">
-
-            <h3>☀️ البناء الضوئي</h3>
-
-            <p>
-                يحتاج النبات للقيام بالبناء الضوئي إلى
-                ضوء الشمس والماء وثاني أكسيد الكربون.
-            </p>
-
-            <div class="thinking-box">
-                ☀️ ضوء الشمس + 💧 الماء + 🌬️ ثاني أكسيد الكربون
-                <br>
-                ⬇️
-                <br>
-                🍬 سكر + 💨 أكسجين
+                <div class="thinking-box">
+                    ☀️ ضوء الشمس + 💧 الماء + 🌬️ ثاني أكسيد الكربون
+                    <br>
+                    ⬇️
+                    <br>
+                    🍬 سكر + 💨 أكسجين
+                </div>
             </div>
 
-        </div>
+            <div class="lesson-card">
+                <h3>💧 النتح</h3>
 
+                <p>
+                    النتح هو خروج الماء من النبات على هيئة
+                    بخار عن طريق الثغور.
+                </p>
+            </div>
 
-        <div class="lesson-card">
+            <div class="lesson-card">
+                <h3>🌵 تكيف الصبار</h3>
 
-            <h3>💧 النتح</h3>
-
-            <p>
-                النتح هو خروج الماء من النبات على هيئة
-                بخار عن طريق الثغور.
-            </p>
-
-        </div>
-
-
-        <div class="lesson-card">
-
-            <h3>🌵 تكيف الصبار</h3>
-
-            <p>
-                يستطيع الصبار العيش في البيئة الصحراوية
-                والمحافظة على الماء.
-            </p>
-
-        </div>
-
+                <p>
+                    يستطيع الصبار العيش في البيئة الصحراوية
+                    والمحافظة على الماء.
+                </p>
+            </div>
         `
     },
 
@@ -666,7 +580,6 @@ const lessons = {
 const classificationQuizzes = {
 
     easy: [
-
         {
             q: "ما المقصود بالتصنيف؟",
             options: [
@@ -710,12 +623,10 @@ const classificationQuizzes = {
             ],
             answer: 1
         }
-
     ],
 
 
     medium: [
-
         {
             q: "لماذا يحتاج العلماء إلى تصنيف المخلوقات الحية؟",
             options: [
@@ -770,12 +681,10 @@ const classificationQuizzes = {
             ],
             answer: 0
         }
-
     ],
 
 
     hard: [
-
         {
             q: "أمامك حصان وكلب وعنكبوت. جميعها من المملكة الحيوانية. إذا اشترك الحصان والكلب في مستويات أكثر تحديدًا، فما الاستنتاج؟",
             options: [
@@ -830,7 +739,6 @@ const classificationQuizzes = {
             ],
             answer: 0
         }
-
     ]
 
 };
@@ -843,7 +751,6 @@ const classificationQuizzes = {
 const plantQuizzes = {
 
     easy: [
-
         {
             q: "إلى أي مجموعتين رئيسيتين تصنف النباتات؟",
             options: [
@@ -898,12 +805,10 @@ const plantQuizzes = {
             ],
             answer: 2
         }
-
     ],
 
 
     medium: [
-
         {
             q: "نبات له أوعية نقل ولكنه لا ينتج بذورًا. إلى أي مجموعة ينتمي؟",
             options: [
@@ -958,12 +863,10 @@ const plantQuizzes = {
             ],
             answer: 1
         }
-
     ],
 
 
     hard: [
-
         {
             q: "نبات لا ينتج أزهارًا وينتج بذورًا داخل أعضاء مخروطية الشكل. ما تصنيفه؟",
             options: [
@@ -987,7 +890,7 @@ const plantQuizzes = {
         },
 
         {
-            q: "إذا توقفت الخشب في نبات عن العمل، فما العملية التي تتأثر؟",
+            q: "إذا توقف الخشب في نبات عن العمل، فما العملية التي تتأثر؟",
             options: [
                 "انتقال الماء والأملاح المعدنية",
                 "إنتاج البذور فقط",
@@ -1073,7 +976,6 @@ const plantQuizzes = {
             ],
             answer: 1
         }
-
     ]
 
 };
@@ -1103,7 +1005,6 @@ function buildGeneralQuizzes() {
         ]
 
     };
-
 }
 
 
@@ -1135,27 +1036,22 @@ function openLesson(id) {
     const content =
         document.getElementById("lessonContent");
 
-
     if (!lesson || !modal || !content) {
         return;
     }
 
-
     const lessonQuizButton =
         (id === "classification" || id === "plants")
+            ? `
+                <button
+                    class="main-action"
+                    onclick="startLessonQuiz('${id}')">
 
-        ? `
-            <button
-                class="main-action"
-                onclick="startLessonQuiz('${id}')">
+                    📝 اختبر نفسك في هذا الدرس
 
-                📝 اختبر نفسك في هذا الدرس
-
-            </button>
-        `
-
-        : "";
-
+                </button>
+            `
+            : "";
 
     content.innerHTML = `
 
@@ -1173,7 +1069,6 @@ function openLesson(id) {
 
         </div>
 
-
         <div class="lesson-actions">
 
             ${lessonQuizButton}
@@ -1190,7 +1085,6 @@ function openLesson(id) {
 
     `;
 
-
     modal.classList.add("show");
 
     document.body.style.overflow = "hidden";
@@ -1206,11 +1100,9 @@ function closeLesson() {
     const modal =
         document.getElementById("lessonModal");
 
-
     if (modal) {
         modal.classList.remove("show");
     }
-
 
     document.body.style.overflow = "";
 }
@@ -1229,30 +1121,24 @@ function startQuiz(level) {
     currentQuiz =
         [...(quizzes[level] || quizzes.easy)];
 
-
     currentQuiz.sort(
         () => Math.random() - 0.5
     );
-
 
     currentQuestion = 0;
 
     score = 0;
 
-
     const modal =
         document.getElementById("quizModal");
-
 
     if (!modal) {
         return;
     }
 
-
     modal.classList.add("show");
 
     document.body.style.overflow = "hidden";
-
 
     showQuestion();
 }
@@ -1266,67 +1152,54 @@ function startLessonQuiz(lessonId) {
 
     let lessonQuizzes = null;
 
-
     if (lessonId === "classification") {
 
-        lessonQuizzes = classificationQuizzes;
+        lessonQuizzes =
+            classificationQuizzes;
 
         currentQuizTitle =
             "🔬 تصنيف المخلوقات الحية";
-
     }
-
 
     else if (lessonId === "plants") {
 
-        lessonQuizzes = plantQuizzes;
+        lessonQuizzes =
+            plantQuizzes;
 
         currentQuizTitle =
             "🌿 مملكة النباتات";
-
     }
-
 
     else {
 
         return;
-
     }
-
 
     currentLevel = "hard";
 
-
     currentQuiz =
         [...lessonQuizzes[currentLevel]];
-
 
     currentQuiz.sort(
         () => Math.random() - 0.5
     );
 
-
     currentQuestion = 0;
 
     score = 0;
 
-
     const modal =
         document.getElementById("quizModal");
-
 
     if (!modal) {
         return;
     }
 
-
     closeLesson();
-
 
     modal.classList.add("show");
 
     document.body.style.overflow = "hidden";
-
 
     showQuestion();
 }
@@ -1341,29 +1214,21 @@ function showQuestion() {
     const content =
         document.getElementById("quizContent");
 
-
     if (!content) {
         return;
     }
 
-
-    if (
-        currentQuestion >=
-        currentQuiz.length
-    ) {
+    if (currentQuestion >= currentQuiz.length) {
 
         showResult();
 
         return;
     }
 
-
     const question =
         currentQuiz[currentQuestion];
 
-
     let options = "";
-
 
     question.options.forEach(
         function(option, index) {
@@ -1371,6 +1236,7 @@ function showQuestion() {
             options += `
 
                 <button
+                    type="button"
                     class="quiz-option"
                     onclick="answerQuestion(${index})">
 
@@ -1389,7 +1255,6 @@ function showQuestion() {
         }
     );
 
-
     const levelName =
         currentLevel === "easy"
             ? "🟢 أساسي"
@@ -1397,17 +1262,16 @@ function showQuestion() {
                 ? "🟡 متوسط"
                 : "🔴 تحدي";
 
-
     content.innerHTML = `
 
         <button
+            type="button"
             class="close"
             onclick="closeQuiz()">
 
             ×
 
         </button>
-
 
         <div class="quiz-header">
 
@@ -1430,7 +1294,6 @@ function showQuestion() {
 
         </div>
 
-
         <div class="question-box">
 
             <h2>
@@ -1438,7 +1301,6 @@ function showQuestion() {
             </h2>
 
         </div>
-
 
         <div class="quiz-options">
 
@@ -1459,12 +1321,12 @@ function answerQuestion(selected) {
     const question =
         currentQuiz[currentQuestion];
 
+    if (!question) {
+        return;
+    }
 
     const buttons =
-        document.querySelectorAll(
-            ".quiz-option"
-        );
-
+        document.querySelectorAll(".quiz-option");
 
     buttons.forEach(
         function(button) {
@@ -1472,44 +1334,32 @@ function answerQuestion(selected) {
         }
     );
 
-
     buttons.forEach(
         function(button, index) {
 
-            if (
-                index === question.answer
-            ) {
+            if (index === question.answer) {
 
-                button.classList.add(
-                    "correct"
-                );
+                button.classList.add("correct");
 
             }
-
 
             if (
                 index === selected &&
                 selected !== question.answer
             ) {
 
-                button.classList.add(
-                    "wrong"
-                );
+                button.classList.add("wrong");
 
             }
 
         }
     );
 
-
-    if (
-        selected === question.answer
-    ) {
+    if (selected === question.answer) {
 
         score++;
 
     }
-
 
     setTimeout(
         function() {
@@ -1533,16 +1383,17 @@ function showResult() {
     const content =
         document.getElementById("quizContent");
 
+    if (!content || currentQuiz.length === 0) {
+        return;
+    }
 
     const percentage =
         Math.round(
             (score / currentQuiz.length) * 100
         );
 
-
     let icon;
     let message;
-
 
     if (percentage >= 90) {
 
@@ -1580,17 +1431,16 @@ function showResult() {
 
     }
 
-
     content.innerHTML = `
 
         <button
+            type="button"
             class="close"
             onclick="closeQuiz()">
 
             ×
 
         </button>
-
 
         <div class="result">
 
@@ -1618,10 +1468,10 @@ function showResult() {
                 ${message}
             </p>
 
-
             <div class="result-buttons">
 
                 <button
+                    type="button"
                     class="main-action"
                     onclick="restartCurrentQuiz()">
 
@@ -1629,8 +1479,8 @@ function showResult() {
 
                 </button>
 
-
                 <button
+                    type="button"
                     class="secondary-action"
                     onclick="closeQuiz()">
 
@@ -1656,11 +1506,9 @@ function restartCurrentQuiz() {
         () => Math.random() - 0.5
     );
 
-
     currentQuestion = 0;
 
     score = 0;
-
 
     showQuestion();
 }
@@ -1675,11 +1523,9 @@ function closeQuiz() {
     const modal =
         document.getElementById("quizModal");
 
-
     if (modal) {
         modal.classList.remove("show");
     }
-
 
     document.body.style.overflow = "";
 }
@@ -1688,11 +1534,6 @@ function closeQuiz() {
 // =====================================================
 // لعبة الحروف
 // =====================================================
-
-
-// -----------------------------------------------------
-// الحروف الموجودة في لوحة اللعبة
-// -----------------------------------------------------
 
 const lettersGameLetters = [
     "ا", "ب", "ت", "ج", "ح",
@@ -1703,13 +1544,9 @@ const lettersGameLetters = [
 ];
 
 
-// -----------------------------------------------------
+// =====================================================
 // أسئلة لعبة الحروف
-//
-// الشرط:
-// الإجابة كلمة أو كلمتان
-// وتبدأ بنفس حرف الخانة
-// -----------------------------------------------------
+// =====================================================
 
 const lettersGameQuestions = {
 
@@ -1720,17 +1557,17 @@ const lettersGameQuestions = {
 
     "ب": {
         q: "ما العملية التي يصنع فيها النبات غذاءه باستخدام ضوء الشمس؟",
-        answers: ["البناء الضوئي"]
+        answers: ["البناء الضوئي", "بناء ضوئي"]
     },
 
     "ت": {
         q: "ما الصفات التي تساعد المخلوق الحي على البقاء في بيئته؟",
-        answers: ["التكيف"]
+        answers: ["التكيف", "تكيف"]
     },
 
     "ج": {
         q: "ما الجزء الذي يمتص الماء والأملاح من التربة؟",
-        answers: ["الجذر"]
+        answers: ["الجذر", "جذر"]
     },
 
     "ح": {
@@ -1744,13 +1581,13 @@ const lettersGameQuestions = {
     },
 
     "ذ": {
-        q: "ما الكلمة التي تصف المخلوقات التي تمتلك بذورًا؟",
-        answers: ["ذوات البذور"]
+        q: "ما الكلمة التي تصف النباتات التي تنتج بذورًا؟",
+        answers: ["ذوات البذور", "ذوات البذور"]
     },
 
     "ر": {
-        q: "ما العملية التي يخرج فيها الماء من النبات على هيئة بخار؟",
-        answers: ["النتح"]
+        q: "ما حركة الهواء التي قد نشعر بها في البيئة؟",
+        answers: ["رياح", "الرياح"]
     },
 
     "س": {
@@ -1774,13 +1611,13 @@ const lettersGameQuestions = {
     },
 
     "ط": {
-        q: "ما نوع النباتات التي لها أوعية تنقل الماء والمواد الغذائية؟",
-        answers: ["نباتات وعائية", "وعائية"]
+        q: "اذكر مثالًا على مخلوقات حية تقوم بالبناء الضوئي وتعيش في الماء.",
+        answers: ["طحالب", "الطحالب"]
     },
 
     "ع": {
-        q: "ما نوع النباتات التي لها أوعية نقل؟",
-        answers: ["الوعائية", "وعائية"]
+        q: "ما اسم التراكيب الدقيقة التي تنقل الماء والمواد داخل بعض النباتات؟",
+        answers: ["عروق", "العروق"]
     },
 
     "ف": {
@@ -1815,17 +1652,17 @@ const lettersGameQuestions = {
 
     "هـ": {
         q: "ما المورد الغازي المهم للمخلوقات الحية؟",
-        answers: ["الهواء"]
+        answers: ["الهواء", "هواء"]
     },
 
     "و": {
-        q: "ما المورد الذي يمتصه الجذر من التربة؟",
-        answers: ["الماء"]
+        q: "ما نوع النبات الذي يمتلك أوعية لنقل الماء والمواد الغذائية؟",
+        answers: ["وعائي", "وعائية", "نبات وعائي", "نباتات وعائية"]
     },
 
     "ي": {
         q: "ما أصغر مستوى من مستويات التصنيف؟",
-        answers: ["النوع"]
+        answers: ["يُسمى النوع", "يسمى النوع", "يعتبر النوع"]
     },
 
     "خ": {
@@ -1841,9 +1678,9 @@ const lettersGameQuestions = {
 };
 
 
-// -----------------------------------------------------
+// =====================================================
 // متغيرات اللعبة
-// -----------------------------------------------------
+// =====================================================
 
 let lettersGameBoard = [];
 
@@ -1855,7 +1692,7 @@ let lettersGameWinner = null;
 
 
 // =====================================================
-// إنشاء نافذة اللعبة تلقائيًا
+// إنشاء نافذة اللعبة
 // =====================================================
 
 function ensureLettersGameModal() {
@@ -1863,20 +1700,16 @@ function ensureLettersGameModal() {
     let modal =
         document.getElementById("lettersGameModal");
 
-
     if (modal) {
         return modal;
     }
 
-
     modal =
         document.createElement("div");
-
 
     modal.id = "lettersGameModal";
 
     modal.className = "modal";
-
 
     modal.innerHTML = `
 
@@ -1888,17 +1721,13 @@ function ensureLettersGameModal() {
 
     `;
 
-
     document.body.appendChild(modal);
-
 
     modal.addEventListener(
         "click",
         function(event) {
 
-            if (
-                event.target === modal
-            ) {
+            if (event.target === modal) {
 
                 closeLettersGame();
 
@@ -1906,7 +1735,6 @@ function ensureLettersGameModal() {
 
         }
     );
-
 
     return modal;
 }
@@ -1921,12 +1749,9 @@ function openLettersGame() {
     const modal =
         ensureLettersGameModal();
 
-
     resetLettersGame();
 
-
     modal.classList.add("show");
-
 
     document.body.style.overflow = "hidden";
 }
@@ -1943,13 +1768,11 @@ function closeLettersGame() {
             "lettersGameModal"
         );
 
-
     if (modal) {
 
         modal.classList.remove("show");
 
     }
-
 
     document.body.style.overflow = "";
 }
@@ -1966,23 +1789,18 @@ function resetLettersGame() {
             function(letter) {
 
                 return {
-
                     letter: letter,
-
                     owner: null
-
                 };
 
             }
         );
-
 
     lettersCurrentTeam = "blue";
 
     lettersGameSelectedIndex = null;
 
     lettersGameWinner = null;
-
 
     renderLettersGame();
 }
@@ -1997,32 +1815,26 @@ function renderLettersGame() {
     const modal =
         ensureLettersGameModal();
 
-
     const content =
         document.getElementById(
             "lettersGameContent"
         );
 
-
     if (!content) {
         return;
     }
-
 
     const blueActive =
         lettersCurrentTeam === "blue"
             ? "active"
             : "";
 
-
     const redActive =
         lettersCurrentTeam === "red"
             ? "active"
             : "";
 
-
     let boardHTML = "";
-
 
     lettersGameBoard.forEach(
         function(cell, index) {
@@ -2032,13 +1844,11 @@ function renderLettersGame() {
                     ? cell.owner
                     : "";
 
-
             const disabled =
                 cell.owner !== null ||
                 lettersGameWinner !== null
                     ? "disabled"
                     : "";
-
 
             boardHTML += `
 
@@ -2059,9 +1869,7 @@ function renderLettersGame() {
         }
     );
 
-
     let winnerHTML = "";
-
 
     if (lettersGameWinner) {
 
@@ -2069,7 +1877,6 @@ function renderLettersGame() {
             lettersGameWinner === "blue"
                 ? "🔵 الفريق الأزرق"
                 : "🔴 الفريق الأحمر";
-
 
         winnerHTML = `
 
@@ -2100,12 +1907,10 @@ function renderLettersGame() {
 
     }
 
-
     const teamName =
         lettersCurrentTeam === "blue"
             ? "🔵 الفريق الأزرق"
             : "🔴 الفريق الأحمر";
-
 
     content.innerHTML = `
 
@@ -2117,7 +1922,6 @@ function renderLettersGame() {
             ×
 
         </button>
-
 
         <div class="letters-game">
 
@@ -2137,7 +1941,6 @@ function renderLettersGame() {
 
             </div>
 
-
             <div class="letters-teams">
 
                 <div
@@ -2147,7 +1950,6 @@ function renderLettersGame() {
 
                 </div>
 
-
                 <div
                     class="letters-team red ${redActive}">
 
@@ -2156,7 +1958,6 @@ function renderLettersGame() {
                 </div>
 
             </div>
-
 
             <div class="letters-turn">
 
@@ -2168,14 +1969,12 @@ function renderLettersGame() {
 
             </div>
 
-
             <div class="letters-rules">
 
                 💡 اختر خانة، اقرأ السؤال،
-                واكتب إجابة قصيرة تبدأ بحرف الخانة.
+                واكتب إجابة قصيرة تبدأ بالحرف المطلوب.
 
             </div>
-
 
             <div class="letters-board">
 
@@ -2183,9 +1982,7 @@ function renderLettersGame() {
 
             </div>
 
-
             ${winnerHTML}
-
 
             <div class="letters-game-actions">
 
@@ -2197,7 +1994,6 @@ function renderLettersGame() {
                     🔄 لعبة جديدة
 
                 </button>
-
 
                 <button
                     type="button"
@@ -2222,38 +2018,79 @@ function renderLettersGame() {
 
 function selectLetterCell(index) {
 
-    if (
-        lettersGameWinner !== null
-    ) {
-
+    if (lettersGameWinner !== null) {
         return;
-
     }
-
 
     const cell =
         lettersGameBoard[index];
-
 
     if (!cell) {
         return;
     }
 
-
-    if (
-        cell.owner !== null
-    ) {
-
+    if (cell.owner !== null) {
         return;
-
     }
-
 
     lettersGameSelectedIndex =
         index;
 
-
     showLettersQuestion();
+}
+
+
+// =====================================================
+// تنظيف الإجابة العربية
+// =====================================================
+
+function normalizeArabicAnswer(text) {
+
+    return String(text || "")
+        .trim()
+        .toLowerCase()
+        .replace(/[ًٌٍَُِّْـ]/g, "")
+        .replace(/[أإآ]/g, "ا")
+        .replace(/ى/g, "ي")
+        .replace(/ة/g, "ه")
+        .replace(/\s+/g, " ");
+}
+
+
+// =====================================================
+// إزالة أل التعريف من بداية الكلمة
+// =====================================================
+
+function removeArabicArticle(text) {
+
+    let value =
+        normalizeArabicAnswer(text);
+
+    if (value.startsWith("ال") && value.length > 2) {
+
+        value =
+            value.substring(2);
+
+    }
+
+    return value;
+}
+
+
+// =====================================================
+// الحصول على أول حرف مهم
+// =====================================================
+
+function getFirstArabicLetter(text) {
+
+    const cleaned =
+        removeArabicArticle(text);
+
+    if (!cleaned) {
+        return "";
+    }
+
+    return cleaned.charAt(0);
 }
 
 
@@ -2268,43 +2105,36 @@ function showLettersQuestion() {
             "lettersGameContent"
         );
 
-
     const index =
         lettersGameSelectedIndex;
-
 
     if (
         !content ||
         index === null
     ) {
-
         return;
-
     }
-
 
     const cell =
         lettersGameBoard[index];
 
+    if (!cell) {
+        return;
+    }
 
     const question =
         lettersGameQuestions[
             cell.letter
         ];
 
-
     if (!question) {
-
         return;
-
     }
-
 
     const teamName =
         lettersCurrentTeam === "blue"
             ? "🔵 الفريق الأزرق"
             : "🔴 الفريق الأحمر";
-
 
     content.innerHTML = `
 
@@ -2317,7 +2147,6 @@ function showLettersQuestion() {
 
         </button>
 
-
         <div class="letters-question">
 
             <div class="letters-question-team">
@@ -2326,18 +2155,15 @@ function showLettersQuestion() {
 
             </div>
 
-
             <div class="letters-question-letter">
 
                 ${cell.letter}
 
             </div>
 
-
             <h2>
                 ${question.q}
             </h2>
-
 
             <p class="letters-answer-hint">
 
@@ -2349,7 +2175,6 @@ function showLettersQuestion() {
 
             </p>
 
-
             <input
                 id="lettersAnswerInput"
                 class="letters-answer-input"
@@ -2357,12 +2182,10 @@ function showLettersQuestion() {
                 autocomplete="off"
                 placeholder="اكتب إجابتك هنا..." />
 
-
             <div
                 id="lettersAnswerMessage"
                 class="letters-answer-message">
             </div>
-
 
             <div class="letters-question-actions">
 
@@ -2374,7 +2197,6 @@ function showLettersQuestion() {
                     ✅ تأكيد الإجابة
 
                 </button>
-
 
                 <button
                     type="button"
@@ -2391,25 +2213,20 @@ function showLettersQuestion() {
 
     `;
 
-
     const input =
         document.getElementById(
             "lettersAnswerInput"
         );
 
-
     if (input) {
 
         input.focus();
-
 
         input.addEventListener(
             "keydown",
             function(event) {
 
-                if (
-                    event.key === "Enter"
-                ) {
+                if (event.key === "Enter") {
 
                     submitLettersAnswer();
 
@@ -2435,60 +2252,20 @@ function cancelLettersQuestion() {
 
 
 // =====================================================
-// تنظيف الإجابة
-// =====================================================
-
-function normalizeArabicAnswer(text) {
-
-    return text
-
-        .trim()
-
-        .toLowerCase()
-
-        .replace(/[ًٌٍَُِّْـ]/g, "")
-
-        .replace(/[أإآ]/g, "ا")
-
-        .replace(/ى/g, "ي")
-
-        .replace(/ة/g, "ه")
-
-        .replace(/\s+/g, " ");
-
-}
-
-
-// =====================================================
-// الحصول على أول حرف حقيقي
-// =====================================================
-
-function getFirstArabicLetter(text) {
-
-    const cleaned =
-        normalizeArabicAnswer(text);
-
-
-    if (!cleaned) {
-        return "";
-    }
-
-
-    return cleaned.charAt(0);
-}
-
-
-// =====================================================
-// فحص الإجابة
+// فحص إجابة لعبة الحروف
 // =====================================================
 
 function submitLettersAnswer() {
 
     const input =
-        document.getElementById("lettersAnswerInput");
+        document.getElementById(
+            "lettersAnswerInput"
+        );
 
     const message =
-        document.getElementById("lettersAnswerMessage");
+        document.getElementById(
+            "lettersAnswerMessage"
+        );
 
     if (!input || !message) {
         return;
@@ -2508,7 +2285,6 @@ function submitLettersAnswer() {
         return;
     }
 
-
     const index =
         lettersGameSelectedIndex;
 
@@ -2519,35 +2295,38 @@ function submitLettersAnswer() {
         return;
     }
 
-
     const question =
-        lettersGameQuestions[cell.letter];
+        lettersGameQuestions[
+            cell.letter
+        ];
 
     if (!question) {
         return;
     }
 
-
-    // -------------------------------------------------
-    // تنظيف إجابة الطالب
-    // -------------------------------------------------
-
     const normalizedUserAnswer =
-        normalizeArabicAnswer(userAnswer);
-
+        normalizeArabicAnswer(
+            userAnswer
+        );
 
     // -------------------------------------------------
-    // التحقق من أول حرف
+    // التحقق من الحرف
     // -------------------------------------------------
 
     const firstLetter =
-        getFirstArabicLetter(userAnswer);
+        getFirstArabicLetter(
+            userAnswer
+        );
 
     const expectedFirstLetter =
-        getFirstArabicLetter(cell.letter);
+        normalizeArabicAnswer(
+            cell.letter
+        );
 
-
-    if (firstLetter !== expectedFirstLetter) {
+    if (
+        firstLetter !==
+        expectedFirstLetter
+    ) {
 
         message.innerHTML = `
             ❌ الإجابة يجب أن تبدأ بحرف
@@ -2560,32 +2339,36 @@ function submitLettersAnswer() {
         return;
     }
 
-
     // -------------------------------------------------
     // الإجابات المقبولة
     // -------------------------------------------------
 
     const acceptedAnswers =
-        question.answers.map(function(answer) {
+        question.answers.map(
+            function(answer) {
 
-            return normalizeArabicAnswer(answer);
+                return normalizeArabicAnswer(
+                    answer
+                );
 
-        });
-
+            }
+        );
 
     // -------------------------------------------------
     // مقارنة الإجابة
     // -------------------------------------------------
 
     const isCorrect =
-        acceptedAnswers.some(function(answer) {
+        acceptedAnswers.some(
+            function(answer) {
 
-            return (
-                normalizedUserAnswer === answer
-            );
+                return (
+                    normalizedUserAnswer ===
+                    answer
+                );
 
-        });
-
+            }
+        );
 
     // =================================================
     // إجابة صحيحة
@@ -2599,44 +2382,41 @@ function submitLettersAnswer() {
         message.className =
             "letters-answer-message correct";
 
-
         cell.owner =
             lettersCurrentTeam;
 
+        setTimeout(
+            function() {
 
-        setTimeout(function() {
+                const winningTeam =
+                    checkLettersWinner(
+                        lettersCurrentTeam
+                    );
 
-            const winningTeam =
-                checkLettersWinner(
-                    lettersCurrentTeam
-                );
+                if (winningTeam) {
 
+                    lettersGameWinner =
+                        winningTeam;
 
-            if (winningTeam) {
+                }
 
-                lettersGameWinner =
-                    winningTeam;
+                else {
 
-            }
+                    lettersCurrentTeam =
+                        lettersCurrentTeam === "blue"
+                            ? "red"
+                            : "blue";
 
-            else {
+                }
 
-                lettersCurrentTeam =
-                    lettersCurrentTeam === "blue"
-                        ? "red"
-                        : "blue";
+                lettersGameSelectedIndex =
+                    null;
 
-            }
+                renderLettersGame();
 
-
-            lettersGameSelectedIndex =
-                null;
-
-
-            renderLettersGame();
-
-        }, 800);
-
+            },
+            800
+        );
 
     }
 
@@ -2657,214 +2437,6 @@ function submitLettersAnswer() {
         message.className =
             "letters-answer-message wrong";
 
-
-        setTimeout(function() {
-
-            lettersCurrentTeam =
-                lettersCurrentTeam === "blue"
-                    ? "red"
-                    : "blue";
-
-
-            lettersGameSelectedIndex =
-                null;
-
-
-            renderLettersGame();
-
-        }, 1200);
-
-    }
-
-}
-
-    const input =
-        document.getElementById(
-            "lettersAnswerInput"
-        );
-
-
-    const message =
-        document.getElementById(
-            "lettersAnswerMessage"
-        );
-
-
-    if (!input || !message) {
-        return;
-    }
-
-
-    const userAnswer =
-        input.value;
-
-
-    const normalizedUserAnswer =
-        normalizeArabicAnswer(
-            userAnswer
-        );
-
-
-    if (!normalizedUserAnswer) {
-
-        message.innerHTML =
-            "⚠️ اكتب إجابة أولًا.";
-
-        message.className =
-            "letters-answer-message wrong";
-
-        return;
-
-    }
-
-
-    const index =
-        lettersGameSelectedIndex;
-
-
-    const cell =
-        lettersGameBoard[index];
-
-
-    if (!cell) {
-        return;
-    }
-
-
-    const question =
-        lettersGameQuestions[
-            cell.letter
-        ];
-
-
-    const firstLetter =
-        getFirstArabicLetter(
-            userAnswer
-        );
-
-
-    const expectedFirstLetter =
-        getFirstArabicLetter(
-            cell.letter
-        );
-
-
-    if (
-        firstLetter !==
-        expectedFirstLetter
-    ) {
-
-        message.innerHTML = `
-
-            ❌ الإجابة يجب أن تبدأ بحرف
-
-            <strong>
-                ${cell.letter}
-            </strong>
-
-        `;
-
-
-        message.className =
-            "letters-answer-message wrong";
-
-
-        return;
-
-    }
-
-
-    const acceptedAnswers =
-        question.answers.map(
-            function(answer) {
-
-                return normalizeArabicAnswer(
-                    answer
-                );
-
-            }
-        );
-
-
-    const isCorrect =
-        acceptedAnswers.includes(
-            normalizedUserAnswer
-        );
-
-
-    if (isCorrect) {
-
-        message.innerHTML =
-            "🎉 إجابة صحيحة! حصلتم على الخانة.";
-
-        message.className =
-            "letters-answer-message correct";
-
-
-        cell.owner =
-            lettersCurrentTeam;
-
-
-        setTimeout(
-            function() {
-
-                const winningTeam =
-                    checkLettersWinner(
-                        lettersCurrentTeam
-                    );
-
-
-                if (winningTeam) {
-
-                    lettersGameWinner =
-                        winningTeam;
-
-                }
-
-                else {
-
-                    lettersCurrentTeam =
-                        lettersCurrentTeam === "blue"
-                            ? "red"
-                            : "blue";
-
-                }
-
-
-                lettersGameSelectedIndex =
-                    null;
-
-
-                renderLettersGame();
-
-            },
-            800
-        );
-
-
-    }
-
-    else {
-
-        message.innerHTML = `
-
-            ❌ ليست الإجابة الصحيحة.
-
-            <br>
-
-            لا يحصل الفريق على الخانة.
-
-            <br><br>
-
-            🔄 ينتقل الدور للفريق الآخر.
-
-        `;
-
-
-        message.className =
-            "letters-answer-message wrong";
-
-
         setTimeout(
             function() {
 
@@ -2873,10 +2445,8 @@ function submitLettersAnswer() {
                         ? "red"
                         : "blue";
 
-
                 lettersGameSelectedIndex =
                     null;
-
 
                 renderLettersGame();
 
@@ -2885,31 +2455,25 @@ function submitLettersAnswer() {
         );
 
     }
-
 }
 
 
 // =====================================================
 // فحص الفوز
-//
-// الأزرق:
-// الاتصال من اليسار إلى اليمين
-//
-// الأحمر:
-// الاتصال من الأعلى إلى الأسفل
 // =====================================================
 
 function checkLettersWinner(team) {
 
     const size = 5;
 
-
     const visited =
         new Set();
 
-
     const queue = [];
 
+    // -------------------------------------------------
+    // الأزرق: من اليسار إلى اليمين
+    // -------------------------------------------------
 
     if (team === "blue") {
 
@@ -2921,7 +2485,6 @@ function checkLettersWinner(team) {
 
             const index =
                 row * size;
-
 
             if (
                 lettersGameBoard[index].owner ===
@@ -2938,6 +2501,9 @@ function checkLettersWinner(team) {
 
     }
 
+    // -------------------------------------------------
+    // الأحمر: من الأعلى إلى الأسفل
+    // -------------------------------------------------
 
     else {
 
@@ -2949,7 +2515,6 @@ function checkLettersWinner(team) {
 
             const index =
                 column;
-
 
             if (
                 lettersGameBoard[index].owner ===
@@ -2966,24 +2531,18 @@ function checkLettersWinner(team) {
 
     }
 
-
-    while (
-        queue.length > 0
-    ) {
+    while (queue.length > 0) {
 
         const current =
             queue.shift();
-
 
         const row =
             Math.floor(
                 current / size
             );
 
-
         const column =
             current % size;
-
 
         if (
             team === "blue" &&
@@ -2994,7 +2553,6 @@ function checkLettersWinner(team) {
 
         }
 
-
         if (
             team === "red" &&
             row === size - 1
@@ -3003,7 +2561,6 @@ function checkLettersWinner(team) {
             return "red";
 
         }
-
 
         const neighbors = [
 
@@ -3017,17 +2574,14 @@ function checkLettersWinner(team) {
 
         ];
 
-
         neighbors.forEach(
             function(position) {
 
                 const newRow =
                     position[0];
 
-
                 const newColumn =
                     position[1];
-
 
                 if (
                     newRow < 0 ||
@@ -3040,11 +2594,9 @@ function checkLettersWinner(team) {
 
                 }
 
-
                 const nextIndex =
                     newRow * size +
                     newColumn;
-
 
                 if (
                     visited.has(nextIndex)
@@ -3053,7 +2605,6 @@ function checkLettersWinner(team) {
                     return;
 
                 }
-
 
                 if (
                     lettersGameBoard[
@@ -3065,11 +2616,9 @@ function checkLettersWinner(team) {
 
                 }
 
-
                 visited.add(
                     nextIndex
                 );
-
 
                 queue.push(
                     nextIndex
@@ -3079,7 +2628,6 @@ function checkLettersWinner(team) {
         );
 
     }
-
 
     return null;
 }
@@ -3098,12 +2646,10 @@ document.addEventListener(
                 "lessonModal"
             );
 
-
         const quizModal =
             document.getElementById(
                 "quizModal"
             );
-
 
         if (lessonModal) {
 
@@ -3124,7 +2670,6 @@ document.addEventListener(
             );
 
         }
-
 
         if (quizModal) {
 
