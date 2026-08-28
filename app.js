@@ -1774,7 +1774,247 @@ document.addEventListener(
 // لعبة الحروف - البداية
 // =====================================================
 
+function // =====================================================
+// لعبة الحروف
+// =====================================================
+
+const lettersGameLetters = [
+    "ا", "ب", "ت", "ج", "ح",
+    "د", "ذ", "ر", "س", "ش",
+    "ص", "ض", "ط", "ع", "ف",
+    "ق", "ك", "ل", "م", "ن",
+    "هـ", "و", "ي", "خ", "غ"
+];
+
+
+let lettersGameBoard = [];
+
+let lettersCurrentTeam = "blue";
+
+
+// =====================================================
+// فتح لعبة الحروف
+// =====================================================
+
 function openLettersGame() {
+
+    const modal =
+        document.getElementById("lettersGameModal");
+
+    const content =
+        document.getElementById("lettersGameContent");
+
+
+    if (!modal || !content) {
+        return;
+    }
+
+
+    resetLettersGame();
+
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+// =====================================================
+// إنشاء اللعبة
+// =====================================================
+
+function renderLettersGame() {
+
+    const content =
+        document.getElementById("lettersGameContent");
+
+
+    if (!content) {
+        return;
+    }
+
+
+    const blueActive =
+        lettersCurrentTeam === "blue"
+            ? "active"
+            : "";
+
+
+    const redActive =
+        lettersCurrentTeam === "red"
+            ? "active"
+            : "";
+
+
+    const teamName =
+        lettersCurrentTeam === "blue"
+            ? "🔵 الفريق الأزرق"
+            : "🔴 الفريق الأحمر";
+
+
+    let boardHTML = "";
+
+
+    lettersGameBoard.forEach(
+        function(cell, index) {
+
+            const disabled =
+                cell.owner !== null
+                    ? "disabled"
+                    : "";
+
+
+            const ownerClass =
+                cell.owner
+                    ? cell.owner
+                    : "";
+
+
+            boardHTML += `
+
+                <button
+                    class="letter-cell ${ownerClass}"
+                    ${disabled}
+                    onclick="selectLetterCell(${index})">
+
+                    ${cell.letter}
+
+                </button>
+
+            `;
+
+        }
+    );
+
+
+    content.innerHTML = `
+
+        <div class="letters-game">
+
+            <div class="letters-game-header">
+
+                <div class="letters-game-icon">
+                    🔤
+                </div>
+
+                <h2>
+                    لعبة الحروف 🏆
+                </h2>
+
+                <p>
+                    أجب عن أسئلة العلوم واستحوذ على الخانات!
+                </p>
+
+            </div>
+
+
+            <div class="letters-teams">
+
+                <div class="letters-team blue ${blueActive}">
+                    🔵 الفريق الأزرق
+                </div>
+
+                <div class="letters-team red ${redActive}">
+                    🔴 الفريق الأحمر
+                </div>
+
+            </div>
+
+
+            <div class="letters-turn">
+
+                الدور الآن:
+                ${teamName}
+
+            </div>
+
+
+            <div class="letters-board">
+
+                ${boardHTML}
+
+            </div>
+
+
+            <div class="letters-game-actions">
+
+                <button
+                    class="letters-reset"
+                    onclick="resetLettersGame()">
+
+                    🔄 لعبة جديدة
+
+                </button>
+
+            </div>
+
+        </div>
+
+    `;
+}
+
+
+// =====================================================
+// اختيار خانة
+// =====================================================
+
+function selectLetterCell(index) {
+
+    const cell =
+        lettersGameBoard[index];
+
+
+    if (!cell || cell.owner !== null) {
+        return;
+    }
+
+
+    /*
+       مؤقتًا:
+       عند الضغط على الخانة يتم تلوينها مباشرة.
+
+       في الخطوة القادمة سنضع السؤال هنا.
+       إذا كانت الإجابة صحيحة فقط يتم تلوين الخانة.
+    */
+
+    cell.owner =
+        lettersCurrentTeam;
+
+
+    lettersCurrentTeam =
+        lettersCurrentTeam === "blue"
+            ? "red"
+            : "blue";
+
+
+    renderLettersGame();
+}
+
+
+// =====================================================
+// إعادة اللعبة
+// =====================================================
+
+function resetLettersGame() {
+
+    lettersGameBoard =
+        lettersGameLetters.map(
+            function(letter) {
+
+                return {
+                    letter: letter,
+                    owner: null
+                };
+
+            }
+        );
+
+
+    lettersCurrentTeam = "blue";
+
+
+    renderLettersGame();
+} {
 
     const modal =
         document.getElementById("lettersGameModal");
