@@ -190,6 +190,13 @@ const lessons = {
                 
                 </ul>
 
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/2-uP1qXERcI"
+                        title="فيديو عن تصنيف المخلوقات الحية"
+                        allowfullscreen>
+                    </iframe>
+            </div>
             </div>
 
         `
