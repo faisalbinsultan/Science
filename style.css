@@ -484,6 +484,13 @@ body {
     margin-bottom: 8px;
 }
 
+.lesson-info img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 20px auto;
+}
+
 
 /* ==========================================
    رأس الاختبار
