@@ -300,6 +300,14 @@ const lessons = {
                     و الاكسجين يطلع من الثغور باعتبار انه فضلات
                 </p>
 
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/MsQZMPKEX6M"
+                        title="فيديو عن البناء الضوئي"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
             </div>
 
         `
